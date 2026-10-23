@@ -1,0 +1,6 @@
+*.cs text eol=lf
+*.csproj text eol=lf
+*.slnx text eol=lf
+*.md text eol=lf
+CMakeLists.txt text eol=lf
+*.cmake text eol=lf

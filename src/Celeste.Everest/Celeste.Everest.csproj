@@ -1,0 +1,308 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>12.0</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <AssemblyName>Celeste.Everest</AssemblyName>
+        <RootNamespace>Celeste.Everest</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <DefineConstants>$(DefineConstants);JETBRAINS_ANNOTATIONS</DefineConstants>
+        <CelesteRuntimeIdentifier
+            Condition="'$(CelesteRuntimeIdentifier)' == ''"
+        >$(NETCoreSdkRuntimeIdentifier)</CelesteRuntimeIdentifier>
+        <CelesteLuaLibraryName Condition="'$(CelesteRuntimeIdentifier)' == 'win-x64'">lua54.dll</CelesteLuaLibraryName>
+        <CelesteLuaLibraryName
+            Condition="'$(CelesteRuntimeIdentifier)' == 'linux-x64'"
+        >liblua54.so</CelesteLuaLibraryName>
+        <CelesteLuaLibraryName
+            Condition="'$(CelesteRuntimeIdentifier)' == 'osx-x64'"
+        >liblua54.dylib</CelesteLuaLibraryName>
+        <CelesteLuaOutputDirectory>$(CelesteRuntimeIdentifier)</CelesteLuaOutputDirectory>
+        <CelesteLuaOutputDirectory
+            Condition="'$(CelesteRuntimeIdentifier)' == 'win-x64'"
+        >x86_64</CelesteLuaOutputDirectory>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Core/Celeste.Core.csproj" />
+        <ProjectReference Include="../Celeste.Input.Gameplay/Celeste.Input.Gameplay.csproj" />
+        <ProjectReference Include="../Celeste.Physics/Celeste.Physics.csproj" />
+        <ProjectReference Include="../Celeste.Formats.Graphics/Celeste.Formats.Graphics.csproj" />
+        <ProjectReference Include="../Celeste.Scene/Celeste.Scene.csproj" />
+        <ProjectReference Include="../Celeste.Localization/Celeste.Localization.csproj" />
+        <ProjectReference Include="../Celeste.Input/Celeste.Input.csproj" />
+        <ProjectReference Include="../Celeste.Simulation/Celeste.Simulation.csproj" />
+        <ProjectReference Include="../Celeste.Formats.Map/Celeste.Formats.Map.csproj" />
+        <ProjectReference Include="../Celeste.Formats.Save/Celeste.Formats.Save.csproj" />
+        <ProjectReference Include="../Celeste.Game/Celeste.Game.csproj" />
+        <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
+        <PackageReference Include="Mono.Cecil" Version="$(MonoCecilVersion)" />
+        <PackageReference Include="MonoMod.Backports" Version="$(MonoModBackportsVersion)" Aliases="MonoModBackports" />
+        <PackageReference Include="MonoMod.Core" Version="$(MonoModCoreVersion)" />
+        <PackageReference Include="MonoMod.RuntimeDetour" Version="$(MonoModRuntimeDetourVersion)" />
+        <ProjectReference Include="../../vendor/MonoMod/src/MonoMod.Utils/MonoMod.Utils.csproj" />
+        <Reference Include="Newtonsoft.Json">
+            <HintPath>../../lib/Everest/Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="Jdenticon">
+            <HintPath>../../lib/Everest/Jdenticon.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.CompilerServices.Unsafe">
+            <HintPath>../../lib/Metadata/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Reflection.Metadata">
+            <HintPath>../../lib/Metadata/System.Reflection.Metadata.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Collections.Immutable">
+            <HintPath>../../lib/Metadata/System.Collections.Immutable.dll</HintPath>
+        </Reference>
+        <Reference Include="YamlDotNet">
+            <HintPath>../../lib/Everest/YamlDotNet.dll</HintPath>
+        </Reference>
+        <Reference Include="MAB.DotIgnore">
+            <HintPath>../../lib/Everest/MAB.DotIgnore.dll</HintPath>
+        </Reference>
+        <Reference Include="NLua">
+            <HintPath>../../lib/Lua/NLua.dll</HintPath>
+        </Reference>
+        <Reference Include="KeraLua">
+            <HintPath>../../lib/Lua/KeraLua.dll</HintPath>
+        </Reference>
+        <None
+            Include="../../lib/Native/$(CelesteRuntimeIdentifier)/$(CelesteLuaLibraryName)"
+            Condition="'$(CelesteLuaLibraryName)' != '' And Exists('../../lib/Native/$(CelesteRuntimeIdentifier)/$(CelesteLuaLibraryName)')"
+            Link="Native/$(CelesteLuaOutputDirectory)/$(CelesteLuaLibraryName)"
+            CopyToOutputDirectory="PreserveNewest"
+        />
+        <ProjectReference Include="../Celeste.Graphics/Celeste.Graphics.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Brazilian Portuguese.txt"
+            LogicalName="Content/Dialog/Brazilian Portuguese.txt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/English.txt"
+            LogicalName="Content/Dialog/English.txt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Fonts/japanese-missing-debug.txt"
+            LogicalName="Content/Dialog/Fonts/japanese-missing-debug.txt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/French.txt"
+            LogicalName="Content/Dialog/French.txt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/German.txt"
+            LogicalName="Content/Dialog/German.txt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Japanese.txt"
+            LogicalName="Content/Dialog/Japanese.txt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Korean.txt"
+            LogicalName="Content/Dialog/Korean.txt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Polish.txt"
+            LogicalName="Content/Dialog/Polish.txt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Russian.txt"
+            LogicalName="Content/Dialog/Russian.txt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Simplified Chinese.txt"
+            LogicalName="Content/Dialog/Simplified Chinese.txt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Fonts/chinese.fnt"
+            LogicalName="Content/Dialog/Fonts/chinese.fnt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Fonts/japanese.fnt"
+            LogicalName="Content/Dialog/Fonts/japanese.fnt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Fonts/korean.fnt"
+            LogicalName="Content/Dialog/Fonts/korean.fnt"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Fonts/chinese_generated_0.png"
+            LogicalName="Content/Dialog/Fonts/chinese_generated_0.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Fonts/chinese_generated_1.png"
+            LogicalName="Content/Dialog/Fonts/chinese_generated_1.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Fonts/japanese_everest_0.png"
+            LogicalName="Content/Dialog/Fonts/japanese_everest_0.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Fonts/japanese_everest_1.png"
+            LogicalName="Content/Dialog/Fonts/japanese_everest_1.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Dialog/Fonts/korean_everest_0.png"
+            LogicalName="Content/Dialog/Fonts/korean_everest_0.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gameplay/tilesets/subFolder/betterTemplate.png"
+            LogicalName="Content/Graphics/Atlases/Gameplay/tilesets/subFolder/betterTemplate.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gameplay/__fallback.png"
+            LogicalName="Content/Graphics/Atlases/Gameplay/__fallback.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/areas/new-yellow.png"
+            LogicalName="Content/Graphics/Atlases/Gui/areas/new-yellow.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/areas/null.png"
+            LogicalName="Content/Graphics/Atlases/Gui/areas/null.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/areas/null_back.png"
+            LogicalName="Content/Graphics/Atlases/Gui/areas/null_back.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/areas/steam.png"
+            LogicalName="Content/Graphics/Atlases/Gui/areas/steam.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/areas/steam_back.png"
+            LogicalName="Content/Graphics/Atlases/Gui/areas/steam_back.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/areaselect/title.png"
+            LogicalName="Content/Graphics/Atlases/Gui/areaselect/title.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/controls/mouse/Left.png"
+            LogicalName="Content/Graphics/Atlases/Gui/controls/mouse/Left.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/controls/mouse/Middle.png"
+            LogicalName="Content/Graphics/Atlases/Gui/controls/mouse/Middle.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/controls/mouse/Right.png"
+            LogicalName="Content/Graphics/Atlases/Gui/controls/mouse/Right.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/controls/mouse/XButton1.png"
+            LogicalName="Content/Graphics/Atlases/Gui/controls/mouse/XButton1.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/controls/mouse/XButton2.png"
+            LogicalName="Content/Graphics/Atlases/Gui/controls/mouse/XButton2.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/emoji/checkpoint.m.png"
+            LogicalName="Content/Graphics/Atlases/Gui/emoji/checkpoint.m.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/emoji/everest.m.png"
+            LogicalName="Content/Graphics/Atlases/Gui/emoji/everest.m.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/emoji/glad.png"
+            LogicalName="Content/Graphics/Atlases/Gui/emoji/glad.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/emoji/gladbw.m.png"
+            LogicalName="Content/Graphics/Atlases/Gui/emoji/gladbw.m.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/emoji/thinking.png"
+            LogicalName="Content/Graphics/Atlases/Gui/emoji/thinking.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/emoji/thinkingbw.m.png"
+            LogicalName="Content/Graphics/Atlases/Gui/emoji/thinkingbw.m.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/logo_everest.png"
+            LogicalName="Content/Graphics/Atlases/Gui/logo_everest.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/menu/everest.png"
+            LogicalName="Content/Graphics/Atlases/Gui/menu/everest.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/menu/langnoicon.png"
+            LogicalName="Content/Graphics/Atlases/Gui/menu/langnoicon.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/menu/maplist.png"
+            LogicalName="Content/Graphics/Atlases/Gui/menu/maplist.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/menu/mapsearch.png"
+            LogicalName="Content/Graphics/Atlases/Gui/menu/mapsearch.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/menu/modoptions.png"
+            LogicalName="Content/Graphics/Atlases/Gui/menu/modoptions.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/menu/modoptions_new.png"
+            LogicalName="Content/Graphics/Atlases/Gui/menu/modoptions_new.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/reloader/cogwheel.png"
+            LogicalName="Content/Graphics/Atlases/Gui/reloader/cogwheel.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/title_everest.png"
+            LogicalName="Content/Graphics/Atlases/Gui/title_everest.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/__fallback.png"
+            LogicalName="Content/Graphics/Atlases/Gui/__fallback.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Misc/__fallback.png"
+            LogicalName="Content/Graphics/Atlases/Misc/__fallback.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Portraits/textbox/madeline_mini.png"
+            LogicalName="Content/Graphics/Atlases/Portraits/textbox/madeline_mini.png"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/areas/null.meta.yaml"
+            LogicalName="Content/Graphics/Atlases/Gui/areas/null.meta.yaml"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/areas/null_back.meta.yaml"
+            LogicalName="Content/Graphics/Atlases/Gui/areas/null_back.meta.yaml"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/areas/steam.meta.yaml"
+            LogicalName="Content/Graphics/Atlases/Gui/areas/steam.meta.yaml"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/areas/steam_back.meta.yaml"
+            LogicalName="Content/Graphics/Atlases/Gui/areas/steam_back.meta.yaml"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/menu/maplist.meta.yaml"
+            LogicalName="Content/Graphics/Atlases/Gui/menu/maplist.meta.yaml"
+        />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Graphics/Atlases/Gui/menu/modoptions.meta.yaml"
+            LogicalName="Content/Graphics/Atlases/Gui/menu/modoptions.meta.yaml"
+        />
+        <EmbeddedResource Include="Content/Embedded/Builtin/Lua/boot.lua" LogicalName="Content/Lua/boot.lua" />
+        <EmbeddedResource
+            Include="Content/Embedded/Builtin/Lua/typebuilder.lua"
+            LogicalName="Content/Lua/typebuilder.lua"
+        />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Framework/Celeste.Framework.csproj" />
+    </ItemGroup>
+</Project>

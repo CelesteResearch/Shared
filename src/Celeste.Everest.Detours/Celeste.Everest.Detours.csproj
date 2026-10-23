@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>12.0</LangVersion>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <AssemblyName>Celeste.Everest.Detours</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Everest/Celeste.Everest.csproj" />
+        <Reference Include="NLua">
+            <HintPath>../../lib/Lua/NLua.dll</HintPath>
+        </Reference>
+        <PackageReference Include="MonoMod.Core" Version="$(MonoModCoreVersion)" />
+        <PackageReference Include="Mono.Cecil" Version="$(MonoCecilVersion)" />
+        <PackageReference Include="MonoMod.RuntimeDetour" Version="$(MonoModRuntimeDetourVersion)" />
+        <ProjectReference Include="../../vendor/MonoMod/src/MonoMod.Utils/MonoMod.Utils.csproj" />
+    </ItemGroup>
+</Project>

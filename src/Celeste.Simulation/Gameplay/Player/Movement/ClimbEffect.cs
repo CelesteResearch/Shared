@@ -1,0 +1,15 @@
+namespace Celeste.Simulation.Gameplay.Player.Movement
+{
+    public enum ClimbEffect
+    {
+        GrabRumble,
+        GrabSurface,
+        LetGo,
+        ConveyorStart,
+        ConveyorPosition,
+        ConveyorStop,
+        BoosterRumble,
+        ClimbRumble,
+        LedgeHop,
+    }
+}

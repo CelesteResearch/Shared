@@ -1,0 +1,115 @@
+using System.Collections.Generic;
+
+namespace Celeste.Recorder
+{
+    public static class RecorderDialog
+    {
+        private static readonly Dictionary<string, string> Text = new()
+        {
+            { "MODNAME_TASRECORDER", "TAS Recorder" },
+            { "MODOPTIONS_TASRECORDER_TITLE", "TAS Recorder" },
+            { "TAS_RECORDER_SETUPHWACCEL_TITLE", "TAS Recorder" },
+            { "TAS_RECORDER_SETUPHWACCEL_SUBTITLE", "Setup Hardware Acceleration" },
+            {
+                "TAS_RECORDER_SETUPHWACCEL_DESC",
+                "Please chose the appropriate hardware acceleration type for your system.\nIf you don't know what that means, just select the one from your GPU vendor.\nIf you don't know your GPU vendor, chose \"No Hardware Acceleration\".\nYou can always change this setting in the TAS Recorder mod options."
+            },
+            { "TAS_RECORDER_SETUPHWACCEL_None", "No Hardware Acceleration" },
+            { "TAS_RECORDER_SETUPHWACCEL_QSV", "Intel QSV" },
+            { "TAS_RECORDER_SETUPHWACCEL_NVENC", "NVIDIA NVENC" },
+            { "TAS_RECORDER_SETUPHWACCEL_AMF", "AMD AMF" },
+            { "TAS_RECORDER_SETUPHWACCEL_VideoToolbox", "macOS VideoToolbox" },
+            { "TAS_RECORDER_FPS", "Frame Rate" },
+            { "TAS_RECORDER_VideoResolution", "Resolution" },
+            { "TAS_RECORDER_VideoBitrate", "Video Bitrate" },
+            { "TAS_RECORDER_AudioBitrate", "Audio Bitrate" },
+            { "TAS_RECORDER_OutputDirectory", "Output Directory" },
+            { "TAS_RECORDER_EncoderType", "Encoder Type" },
+            { "TAS_RECORDER_HardwareAccelerationType", "Hardware Acceleration" },
+            { "TAS_RECORDER_ContainerType", "Container Format" },
+            { "TAS_RECORDER_VideoCodecOverwrite", "Video Codec Overwrite" },
+            { "TAS_RECORDER_AudioCodecOverwrite", "Audio Codec Overwrite" },
+            { "TAS_RECORDER_H264Preset", "H.264 Preset" },
+            { "TAS_RECORDER_H264Quality", "H.264 Quality" },
+            { "TAS_RECORDER_RecordingIndicator", "Red Dot" },
+            { "TAS_RECORDER_RecordingTime", "Time" },
+            { "TAS_RECORDER_RecordingProgress", "Progress" },
+            { "TAS_RECORDER_CODEC_SETTINGS", "Advanced Settings" },
+            { "TAS_RECORDER_RECORDING_BANNER", "Recording Banner" },
+            {
+                "TAS_RECORDER_EncoderType_DESC",
+                "FFmpeg Binary: Supports hardware acceleration, but it's less stable and\ndoesn't support changing values while recording.\nFFmpeg Library: Slower encoding, but more stable and\nsupports changing values while recording."
+            },
+            {
+                "TAS_RECORDER_HardwareAccelerationType_DESC",
+                "Make sure to select the correct one! Note that using hardware acceleration\nimproves encoding times but might sometimes, depending on your GPU,\nproduce slightly worse looking videos.\nUsing hardware acceleration disables video-codec-overwrites!"
+            },
+            { "TAS_RECORDER_FPS_DESC", "Frame-rates above 60 FPS only make sense with high-FPS mods" },
+            {
+                "TAS_RECORDER_VideoResolution_DESC",
+                "Resolutions above 1920x1080 only make sense\nfor increased bit-rates on YouTube"
+            },
+            { "TAS_RECORDER_VideoBitrate_DESC", "Higher bit-rates give higher quality but slower encoding times" },
+            { "TAS_RECORDER_AudioBitrate_DESC", "Higher bit-rates give higher quality but slower encoding times" },
+            { "TAS_RECORDER_VideoCodecOverwrite_DESC", "Overwrites the default codec which is used by the container" },
+            {
+                "TAS_RECORDER_AudioCodecOverwrite_DESC",
+                "Overwrites the default codec which is used by the container\nONLY CHANGE THIS IF YOU KNOW WHAT YOU ARE DOING!"
+            },
+            {
+                "TAS_RECORDER_H264Preset_DESC",
+                "Faster the encoding times result in worse file compression\nHardware acceleration might not support all values!"
+            },
+            {
+                "TAS_RECORDER_H264Quality_DESC",
+                "Higher values give a lower bitrate/file size, but result in a worse quality\nHardware acceleration might not support all values!"
+            },
+            { "TAS_RECORDER_ContainerType_mp4", "MPEG-4 (.mp4)" },
+            { "TAS_RECORDER_ContainerType_mkv", "Matroska (.mkv)" },
+            { "TAS_RECORDER_ContainerType_mov", "QuickTime (.mov)" },
+            { "TAS_RECORDER_ContainerType_webm", "WebM (.webm)" },
+            { "TAS_RECORDER_EncoderType_FFmpegBinary", "FFmpeg Binary" },
+            { "TAS_RECORDER_EncoderType_FFmpegLibrary", "FFmpeg Library" },
+            { "TAS_RECORDER_EncoderType_Null", "Null (DEBUG ONLY)" },
+            { "TAS_RECORDER_HardwareAccelerationType_None", "Disabled" },
+            { "TAS_RECORDER_HardwareAccelerationType_QSV", "Intel QSV" },
+            { "TAS_RECORDER_HardwareAccelerationType_NVENC", "NVIDIA NVENC" },
+            { "TAS_RECORDER_HardwareAccelerationType_AMF", "AMD AMF" },
+            { "TAS_RECORDER_HardwareAccelerationType_VideoToolbox", "macOS VideoToolbox" },
+            { "TAS_RECORDER_VideoCodecOverwrite_N1", "Default" },
+            { "TAS_RECORDER_VideoCodecOverwrite_0", "No Video" },
+            { "TAS_RECORDER_VideoCodecOverwrite_27", "H.264" },
+            { "TAS_RECORDER_VideoCodecOverwrite_N2", "H.264 RGB" },
+            { "TAS_RECORDER_VideoCodecOverwrite_226", "AV1" },
+            { "TAS_RECORDER_VideoCodecOverwrite_167", "VP9" },
+            { "TAS_RECORDER_VideoCodecOverwrite_139", "VP8" },
+            { "TAS_RECORDER_AudioCodecOverwrite_N1", "Default" },
+            { "TAS_RECORDER_AudioCodecOverwrite_0", "No Audio" },
+            { "TAS_RECORDER_AudioCodecOverwrite_86018", "AAC" },
+            { "TAS_RECORDER_AudioCodecOverwrite_86017", "MP3" },
+            { "TAS_RECORDER_AudioCodecOverwrite_86028", "FLAC" },
+            { "TAS_RECORDER_AudioCodecOverwrite_86076", "Opus" },
+            { "TAS_RECORDER_AudioCodecOverwrite_86021", "Vorbis" },
+            { "TAS_RECORDER_H264Preset_veryslow", "Very Slow" },
+            { "TAS_RECORDER_H264Preset_slower", "Slower" },
+            { "TAS_RECORDER_H264Preset_slow", "Slow" },
+            { "TAS_RECORDER_H264Preset_medium", "Medium" },
+            { "TAS_RECORDER_H264Preset_fast", "Fast" },
+            { "TAS_RECORDER_H264Preset_faster", "Faster" },
+            { "TAS_RECORDER_H264Preset_veryfast", "Very Fast" },
+            { "TAS_RECORDER_H264Preset_superfast", "Super Fast" },
+            { "TAS_RECORDER_H264Preset_ultrafast", "Ultra Fast" },
+            { "TAS_RECORDER_H264Quality_0", "0 (Lossless)" },
+            { "TAS_RECORDER_H264Quality_23", "23 (Default)" },
+            { "TAS_RECORDER_H264Quality_51", "51 (Lossful)" },
+            { "TAS_RECORDER_RecordingTime_NoTime", "No Time" },
+            { "TAS_RECORDER_RecordingTime_Regular", "Regular Time" },
+            { "TAS_RECORDER_RecordingTime_RegularFrames", "Regular Time + Frames" },
+        };
+
+        public static string Get(string key)
+        {
+            return Text.TryGetValue(key, out var value) ? value : "XXX";
+        }
+    }
+}

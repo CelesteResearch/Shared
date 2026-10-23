@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>14.0</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <AssemblyName>Celeste.Graphics</AssemblyName>
+        <RootNamespace>Celeste.Graphics</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Graphics.Effects/Celeste.Graphics.Effects.csproj" />
+        <ProjectReference Include="../Celeste.Core/Celeste.Core.csproj" />
+        <ProjectReference Include="../Celeste.Audio/Celeste.Audio.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource
+            Include="Rendering/Effects/Resources/AlphaTestEffect.fxb"
+            LogicalName="Microsoft.Xna.Framework.Graphics.Effect.Resources.AlphaTestEffect.fxb"
+        />
+        <EmbeddedResource
+            Include="Rendering/Effects/Resources/BasicEffect.fxb"
+            LogicalName="Microsoft.Xna.Framework.Graphics.Effect.Resources.BasicEffect.fxb"
+        />
+        <EmbeddedResource
+            Include="Rendering/Effects/Resources/DualTextureEffect.fxb"
+            LogicalName="Microsoft.Xna.Framework.Graphics.Effect.Resources.DualTextureEffect.fxb"
+        />
+        <EmbeddedResource
+            Include="Rendering/Effects/Resources/EnvironmentMapEffect.fxb"
+            LogicalName="Microsoft.Xna.Framework.Graphics.Effect.Resources.EnvironmentMapEffect.fxb"
+        />
+        <EmbeddedResource
+            Include="Rendering/Effects/Resources/SkinnedEffect.fxb"
+            LogicalName="Microsoft.Xna.Framework.Graphics.Effect.Resources.SkinnedEffect.fxb"
+        />
+        <EmbeddedResource
+            Include="Rendering/Effects/Resources/SpriteEffect.fxb"
+            LogicalName="Microsoft.Xna.Framework.Graphics.Effect.Resources.SpriteEffect.fxb"
+        />
+        <EmbeddedResource
+            Include="Rendering/Effects/Resources/YUVToRGBAEffect.fxb"
+            LogicalName="Microsoft.Xna.Framework.Graphics.Effect.Resources.YUVToRGBAEffect.fxb"
+        />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Input/Celeste.Input.csproj" />
+    </ItemGroup>
+</Project>

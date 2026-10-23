@@ -1,0 +1,122 @@
+using System.Linq.Expressions;
+#if !NETCORE
+using System.Reflection;
+using System.Reflection.Emit;
+#endif
+
+namespace Force.DeepCloner.Helpers
+{
+    /// <summary>
+    ///     Internal class but due implementation restriction should be public
+    /// </summary>
+    public abstract class ShallowObjectCloner
+    {
+        /// <summary>
+        ///     Abstract method for real object cloning
+        /// </summary>
+        protected abstract object DoCloneObject(object obj);
+
+        private static readonly ShallowObjectCloner UnsafeInstance;
+
+        private static ShallowObjectCloner _instance;
+
+        /// <summary>
+        ///     Performs real shallow object clone
+        /// </summary>
+        public static object CloneObject(object obj)
+        {
+            return _instance.DoCloneObject(obj);
+        }
+
+        internal static bool IsSafeVariant()
+        {
+            return _instance is ShallowSafeObjectCloner;
+        }
+
+        static ShallowObjectCloner()
+        {
+#if !NETCORE
+            UnsafeInstance = GenerateUnsafeCloner();
+            _instance = UnsafeInstance;
+            try
+            {
+                _instance.DoCloneObject(new());
+            }
+            catch (Exception)
+            {
+                // switching to safe
+                _instance = new ShallowSafeObjectCloner();
+            }
+#else
+            _instance = new ShallowSafeObjectCloner();
+            // no unsafe variant for core
+            UnsafeInstance = _instance;
+#endif
+        }
+
+        /// <summary>
+        ///     Purpose of this method is testing variants
+        /// </summary>
+        internal static void SwitchTo(bool isSafe)
+        {
+            DeepClonerCache.ClearCache();
+            if (isSafe)
+                _instance = new ShallowSafeObjectCloner();
+            else
+                _instance = UnsafeInstance;
+        }
+
+#if !NETCORE
+        private static ShallowObjectCloner GenerateUnsafeCloner()
+        {
+            var mb = TypeCreationHelper.GetModuleBuilder();
+
+            var builder =
+                mb.DefineType("ShallowSafeObjectClonerImpl", TypeAttributes.Public, typeof(ShallowObjectCloner));
+            var ctorBuilder =
+                builder.DefineConstructor(MethodAttributes.Public,
+                    CallingConventions.HasThis | CallingConventions.HasThis,
+                    Type.EmptyTypes);
+
+            var cil = ctorBuilder.GetILGenerator();
+            cil.Emit(OpCodes.Ldarg_0);
+            // ReSharper disable AssignNullToNotNullAttribute
+            cil.Emit(OpCodes.Call, typeof(ShallowObjectCloner).GetPrivateConstructors()[0]);
+            // ReSharper restore AssignNullToNotNullAttribute
+            cil.Emit(OpCodes.Ret);
+
+            var methodBuilder = builder.DefineMethod(
+                "DoCloneObject",
+                MethodAttributes.Public | MethodAttributes.Virtual,
+                CallingConventions.HasThis,
+                typeof(object),
+                [typeof(object)]);
+
+            var il = methodBuilder.GetILGenerator();
+            il.Emit(OpCodes.Ldarg_1);
+            il.Emit(OpCodes.Call, typeof(object).GetPrivateMethod("MemberwiseClone"));
+            il.Emit(OpCodes.Ret);
+            var type = builder.CreateType();
+            return (ShallowObjectCloner)Activator.CreateInstance(type);
+        }
+#endif
+
+        private class ShallowSafeObjectCloner : ShallowObjectCloner
+        {
+            private static readonly Func<object, object> CloneFunc;
+
+            static ShallowSafeObjectCloner()
+            {
+                var methodInfo = typeof(object).GetPrivateMethod("MemberwiseClone");
+                var p = Expression.Parameter(typeof(object));
+                var mce = Expression.Call(p, methodInfo);
+                CloneFunc = Expression.Lambda<Func<object, object>>(mce, p).Compile();
+            }
+
+            protected override object DoCloneObject(object obj)
+            {
+                return CloneFunc(obj);
+            }
+        }
+    }
+}

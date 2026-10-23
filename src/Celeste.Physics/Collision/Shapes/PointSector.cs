@@ -1,0 +1,18 @@
+using System;
+
+namespace Celeste.Physics.Collision.Shapes
+{
+    [Flags]
+    internal enum PointSector
+    {
+        Center = 0,
+        Top = 1,
+        Bottom = 2,
+        TopLeft = 9,
+        TopRight = 5,
+        Left = 8,
+        Right = 4,
+        BottomLeft = 0xA,
+        BottomRight = 6,
+    }
+}

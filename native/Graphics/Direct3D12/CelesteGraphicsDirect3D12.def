@@ -1,0 +1,19 @@
+LIBRARY CelesteGraphicsDirect3D12
+EXPORTS
+    CelesteDirect3D12GetLastError
+    CelesteDirect3D12GetDeviceApi
+    CelesteDirect3D12CreateOwnedDevice
+    CelesteDirect3D12CreateBorrowedDevice
+    CelesteDirect3D12GetNativeDevice
+    CelesteDirect3D12AcquireTextureOutput
+    CelesteDirect3D12AcquireOutput
+    CelesteDirect3D12PrepareHostPacket
+    CelesteDirect3D12CommitHostPacket
+    CelesteDirect3D12CancelPreparedHostPacket
+    CelesteDirect3D12RetainPacket
+    CelesteDirect3D12CreateWindow
+    CelesteDirect3D12DestroyWindow
+    CelesteDirect3D12ResizeWindow
+    CelesteDirect3D12AcquireWindowOutput
+    CelesteDirect3D12SubmitWindowPacket
+    CelesteDirect3D12PresentWindow

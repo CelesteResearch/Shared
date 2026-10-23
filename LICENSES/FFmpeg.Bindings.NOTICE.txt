@@ -1,0 +1,6 @@
+FFmpeg ABI bindings under src/Celeste.Recorder.Native/FFmpeg derive from the bindings carried by TASRecorder and FFmpeg.AutoGen 6-era sources.
+
+FFmpeg.AutoGen: Copyright (c) Ruslan Balanukhin 2023. The historical 6.0.0 source is licensed under GNU LGPL version 3; see FFmpeg.AutoGen.LGPL-3.0.txt and GPL-3.0.txt.
+TASRecorder: Copyright (c) 2018 Maik Macho. See TASRecorder.MIT.txt for its MIT-licensed contributions.
+
+The binding files have been reorganized and adapted for this project. NativeBindings.cs is an independent project loader licensed under MPL-2.0; it is excluded from the imported binding source scope. The native FFmpeg libraries and executable are supplied separately and retain the license of their particular build.

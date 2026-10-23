@@ -1,0 +1,23 @@
+**/bin/
+**/obj/
+.idea/
+*.user
+*.suo
+*.binlog
+/artifacts/
+
+# User-supplied embedded game content
+/src/Celeste.Game/Reflection/Metadata/Resources/Original/
+/src/Celeste.Game/Reflection/Metadata/Resources/Installed/
+/src/Celeste.Game/Reflection/Metadata/Resources/Constants/Pico8MapData.bin
+/src/Celeste.Everest/Content/Embedded/Builtin/Dialog/
+/src/Celeste.Everest/Content/Embedded/Builtin/Graphics/
+
+# Externally supplied FNA stock effect bytecode (exact resource-map inputs)
+/src/Celeste.Graphics/Rendering/Effects/Resources/AlphaTestEffect.fxb
+/src/Celeste.Graphics/Rendering/Effects/Resources/BasicEffect.fxb
+/src/Celeste.Graphics/Rendering/Effects/Resources/DualTextureEffect.fxb
+/src/Celeste.Graphics/Rendering/Effects/Resources/EnvironmentMapEffect.fxb
+/src/Celeste.Graphics/Rendering/Effects/Resources/SkinnedEffect.fxb
+/src/Celeste.Graphics/Rendering/Effects/Resources/SpriteEffect.fxb
+/src/Celeste.Graphics/Rendering/Effects/Resources/YUVToRGBAEffect.fxb

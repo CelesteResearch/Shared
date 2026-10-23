@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>12.0</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <RootNamespace></RootNamespace>
+        <AssemblyName>Celeste.Recorder.Native</AssemblyName>
+        <NoWarn>CS0169;CS0649</NoWarn>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Update="*.cs">
+            <Link>Celeste/Recorder/Native/%(Filename)%(Extension)</Link>
+        </Compile>
+    </ItemGroup>
+</Project>

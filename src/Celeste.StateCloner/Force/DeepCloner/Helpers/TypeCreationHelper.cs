@@ -1,0 +1,25 @@
+#if !NETCORE
+using System.Reflection;
+using System.Reflection.Emit;
+
+namespace Force.DeepCloner.Helpers
+{
+    internal static class TypeCreationHelper
+    {
+        private static ModuleBuilder _moduleBuilder;
+
+        internal static ModuleBuilder GetModuleBuilder()
+        {
+            // todo: think about multithread
+            if (_moduleBuilder != null) return _moduleBuilder;
+
+            var aName = new AssemblyName("DeepClonerCode");
+            var ab = AssemblyBuilder.DefineDynamicAssembly(aName, AssemblyBuilderAccess.Run);
+            var mb = ab.DefineDynamicModule(aName.Name);
+            _moduleBuilder = mb;
+
+            return _moduleBuilder;
+        }
+    }
+}
+#endif

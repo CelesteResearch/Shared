@@ -1,0 +1,52 @@
+name: Native libraries
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: windows-2022
+            rid: win-x64
+          - runner: ubuntu-24.04
+            rid: linux-x64
+          - runner: macos-15-intel
+            rid: osx-x64
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - name: Build shared native libraries
+        shell: pwsh
+        run: ./tools/Build-Graphics.ps1 -RuntimeIdentifier '${{ matrix.rid }}'
+      - name: Check Linux library relocation
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          set -euo pipefail
+          library=artifacts/runtime/linux-x64/libCelesteGraphicsVulkan.so
+          readelf -d "$library" | grep -F '$ORIGIN'
+          if readelf -d "$library" | grep -F "$GITHUB_WORKSPACE"; then
+            echo 'A native dependency contains an absolute build path.' >&2
+            exit 1
+          fi
+      - name: Check macOS library relocation
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          set -euo pipefail
+          library=artifacts/runtime/osx-x64/libCelesteGraphicsVulkan.dylib
+          otool -L "$library" | grep -F '@rpath/libCelesteGraphicsEffects.dylib'
+          otool -l "$library" | grep -F '@loader_path'
+          if otool -L "$library" | grep -F "$GITHUB_WORKSPACE"; then
+            echo 'A native dependency contains an absolute build path.' >&2
+            exit 1
+          fi

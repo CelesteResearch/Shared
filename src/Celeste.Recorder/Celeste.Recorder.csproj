@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>12.0</LangVersion>
+        <AssemblyName>Celeste.Recorder</AssemblyName>
+        <RootNamespace>Celeste.Recorder</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Graphics/Celeste.Graphics.csproj" />
+        <ProjectReference Include="../Celeste.Simulation/Celeste.Simulation.csproj" />
+        <ProjectReference Include="../Celeste.Recorder.Native/Celeste.Recorder.Native.csproj" />
+    </ItemGroup>
+</Project>

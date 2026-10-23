@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>14.0</LangVersion>
+        <Nullable>annotations</Nullable>
+        <AssemblyName>Celeste.Game.Runtime</AssemblyName>
+        <RootNamespace>Celeste.Game.Runtime</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Compression.Archives/Celeste.Compression.Archives.csproj" />
+        <ProjectReference Include="../Celeste.Input.Gameplay/Celeste.Input.Gameplay.csproj" />
+        <ProjectReference Include="../Celeste.Core/Celeste.Core.csproj" />
+        <ProjectReference Include="../Celeste.Audio/Celeste.Audio.csproj" />
+        <ProjectReference Include="../Celeste.Scene/Celeste.Scene.csproj" />
+        <ProjectReference Include="../Celeste.Game/Celeste.Game.csproj" />
+        <ProjectReference Include="../Celeste.Everest/Celeste.Everest.csproj" />
+        <ProjectReference Include="../Celeste.Everest.Detours/Celeste.Everest.Detours.csproj" />
+        <ProjectReference Include="../Celeste.Simulation/Celeste.Simulation.csproj" />
+        <ProjectReference Include="../Celeste.Graphics/Celeste.Graphics.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="YamlDotNet">
+            <HintPath>../../lib/Everest/YamlDotNet.dll</HintPath>
+            <Private>true</Private>
+        </Reference>
+        <PackageReference Include="Mono.Cecil" Version="$(MonoCecilVersion)" />
+        <PackageReference Include="MonoMod.Backports" Version="$(MonoModBackportsVersion)" Aliases="MonoModBackports" />
+        <PackageReference Include="MonoMod.Core" Version="$(MonoModCoreVersion)" />
+        <PackageReference Include="MonoMod.RuntimeDetour" Version="$(MonoModRuntimeDetourVersion)" />
+        <ProjectReference Include="../../vendor/MonoMod/src/MonoMod.Utils/MonoMod.Utils.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Text.Json" Version="8.0.5" />
+        <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
+        <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
+        <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Input/Celeste.Input.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Framework/Celeste.Framework.csproj" />
+    </ItemGroup>
+</Project>

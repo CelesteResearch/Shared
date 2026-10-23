@@ -1,0 +1,9 @@
+<Project>
+    <PropertyGroup>
+        <ShouldUnsetParentConfigurationAndPlatform>false</ShouldUnsetParentConfigurationAndPlatform>
+        <MonoCecilVersion>0.11.6</MonoCecilVersion>
+        <MonoModBackportsVersion>1.1.2</MonoModBackportsVersion>
+        <MonoModCoreVersion>1.3.6</MonoModCoreVersion>
+        <MonoModRuntimeDetourVersion>25.3.6</MonoModRuntimeDetourVersion>
+    </PropertyGroup>
+</Project>

@@ -1,0 +1,20 @@
+LIBRARY CelesteGraphicsVulkan
+EXPORTS
+    CelesteVulkanGetLastError
+    CelesteVulkanCreateOwnedDevice
+    CelesteVulkanCreateBorrowedDevice
+    CelesteVulkanGetNativeDevice
+    CelesteVulkanReleaseDevice
+    CelesteVulkanGetDeviceApi
+    CelesteVulkanAcquireTextureOutput
+    CelesteVulkanAcquireOutput
+    CelesteVulkanRetainPacket
+    CelesteVulkanRecordHostPacket
+    CelesteVulkanRetireHostSubmissions
+    CelesteVulkanCreateSurfaceWindow
+    CelesteVulkanCreateWindow
+    CelesteVulkanResizeWindow
+    CelesteVulkanAcquireWindowOutput
+    CelesteVulkanSubmitWindowPacket
+    CelesteVulkanPresentWindow
+    CelesteVulkanDestroyWindow

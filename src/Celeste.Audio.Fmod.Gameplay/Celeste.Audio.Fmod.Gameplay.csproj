@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>12.0</LangVersion>
+        <AssemblyName>Celeste.Audio.Fmod.Gameplay</AssemblyName>
+        <RootNamespace>Celeste.Audio.Fmod.Gameplay</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Simulation/Celeste.Simulation.csproj" />
+        <ProjectReference Include="../Celeste.Audio.Fmod/Celeste.Audio.Fmod.csproj" />
+    </ItemGroup>
+</Project>

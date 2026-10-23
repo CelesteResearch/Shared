@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>14.0</LangVersion>
+        <Nullable>annotations</Nullable>
+        <AssemblyName>Celeste.Hosting.Runtime</AssemblyName>
+        <RootNamespace>Celeste.Hosting.Runtime</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Hosting/Celeste.Hosting.csproj" />
+        <ProjectReference Include="../Celeste.Game.Runtime/Celeste.Game.Runtime.csproj" />
+        <ProjectReference Include="../Celeste.Platform.Native/Celeste.Platform.Native.csproj" />
+    </ItemGroup>
+</Project>

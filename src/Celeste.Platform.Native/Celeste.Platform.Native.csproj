@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>14.0</LangVersion>
+        <Nullable>annotations</Nullable>
+        <AssemblyName>Celeste.Platform.Native</AssemblyName>
+        <RootNamespace>Celeste.Platform.Native</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Core/Celeste.Core.csproj" />
+        <ProjectReference Include="../Celeste.Audio/Celeste.Audio.csproj" />
+        <ProjectReference Include="../Celeste.Graphics/Celeste.Graphics.csproj" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.24)
+project(CelesteGraphicsEffects LANGUAGES C CXX)
+set(MOJO_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../../vendor/mojoshader-ad5dff84830c2863c841f4b1f4e3df78c705b383")
+include("${CMAKE_CURRENT_SOURCE_DIR}/../cmake/MojoShader.cmake")
+add_library(CelesteGraphicsEffects SHARED EffectFrontend.cpp EffectFrontendAbi.cpp LinkedSpirvProgram.cpp
+                                          SpirvConstants.cpp SpirvEffectAbi.cpp)
+target_compile_features(CelesteGraphicsEffects PRIVATE cxx_std_17)
+target_include_directories(CelesteGraphicsEffects PRIVATE "${MOJO_ROOT}")
+target_compile_definitions(CelesteGraphicsEffects PRIVATE MOJOSHADER_EFFECT_SUPPORT)
+target_link_libraries(CelesteGraphicsEffects PRIVATE mojoshader)

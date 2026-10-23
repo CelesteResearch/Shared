@@ -1,0 +1,1919 @@
+using System;
+using Celeste.Core.Reflection.Members;
+
+namespace Celeste.Game.Reflection.Metadata;
+
+public static partial class SourceGameMemberMetadata
+{
+    private static void PublishInstalled171(SourceMemberCatalog catalog)
+    {
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121226,
+            "game_05_seeker_impact_normal", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x65, 0x00, 0x65, 0x00,
+                    0x6B, 0x00, 0x65, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x68, 0x00, 0x69, 0x00, 0x74, 0x00, 0x5F, 0x00,
+                    0x6E, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x6D, 0x00, 0x61, 0x00, 0x6C, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F007300650065006B00650072005F006800690074005F006E006F0072006D0061006C00",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121227,
+            "game_05_seeker_impact_lightwall", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x65, 0x00, 0x65, 0x00,
+                    0x6B, 0x00, 0x65, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x68, 0x00, 0x69, 0x00, 0x74, 0x00, 0x5F, 0x00,
+                    0x6C, 0x00, 0x69, 0x00, 0x67, 0x00, 0x68, 0x00, 0x74, 0x00, 0x77, 0x00, 0x61, 0x00, 0x6C, 0x00,
+                    0x6C, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F007300650065006B00650072005F006800690074005F006C006900670068007400770061006C006C00",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121228,
+            "game_05_seeker_booped", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x65, 0x00, 0x65, 0x00,
+                    0x6B, 0x00, 0x65, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x62, 0x00, 0x6F, 0x00, 0x6F, 0x00, 0x70, 0x00,
+                    0x65, 0x00, 0x64, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F007300650065006B00650072005F0062006F006F00700065006400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121229,
+            "game_05_seeker_death", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x65, 0x00, 0x65, 0x00,
+                    0x6B, 0x00, 0x65, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x64, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00,
+                    0x68, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F007300650065006B00650072005F0064006500610074006800",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121230,
+            "game_05_seeker_revive", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x65, 0x00, 0x65, 0x00,
+                    0x6B, 0x00, 0x65, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x76, 0x00, 0x69, 0x00,
+                    0x76, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F007300650065006B00650072005F00720065007600690076006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121231,
+            "game_05_crackedwall_vanish", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x61, 0x00,
+                    0x63, 0x00, 0x6B, 0x00, 0x65, 0x00, 0x64, 0x00, 0x77, 0x00, 0x61, 0x00, 0x6C, 0x00, 0x6C, 0x00,
+                    0x5F, 0x00, 0x76, 0x00, 0x61, 0x00, 0x6E, 0x00, 0x69, 0x00, 0x73, 0x00, 0x68, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F0063007200610063006B0065006400770061006C006C005F00760061006E00690073006800",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121232,
+            "game_05_crystaltheo_breakfree", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x79, 0x00,
+                    0x73, 0x00, 0x74, 0x00, 0x61, 0x00, 0x6C, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00, 0x6F, 0x00,
+                    0x5F, 0x00, 0x62, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x66, 0x00,
+                    0x72, 0x00, 0x65, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F006300720079007300740061006C007400680065006F005F0062007200650061006B005F006600720065006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121233,
+            "game_05_crystaltheo_impact_ground", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x79, 0x00,
+                    0x73, 0x00, 0x74, 0x00, 0x61, 0x00, 0x6C, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00, 0x6F, 0x00,
+                    0x5F, 0x00, 0x68, 0x00, 0x69, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x67, 0x00, 0x72, 0x00, 0x6F, 0x00,
+                    0x75, 0x00, 0x6E, 0x00, 0x64, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F006300720079007300740061006C007400680065006F005F006800690074005F00670072006F0075006E006400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121234,
+            "game_05_crystaltheo_impact_side", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x79, 0x00,
+                    0x73, 0x00, 0x74, 0x00, 0x61, 0x00, 0x6C, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00, 0x6F, 0x00,
+                    0x5F, 0x00, 0x68, 0x00, 0x69, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x73, 0x00, 0x69, 0x00, 0x64, 0x00,
+                    0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F006300720079007300740061006C007400680065006F005F006800690074005F007300690064006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121235,
+            "game_05_eyewall_idle_eyemove", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x65, 0x00, 0x79, 0x00, 0x65, 0x00,
+                    0x62, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x5F, 0x00, 0x65, 0x00, 0x79, 0x00, 0x65, 0x00, 0x6D, 0x00,
+                    0x6F, 0x00, 0x76, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F00650079006500620072006F005F006500790065006D006F0076006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121236,
+            "game_05_eyewall_pulse", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x65, 0x00, 0x79, 0x00, 0x65, 0x00,
+                    0x5F, 0x00, 0x70, 0x00, 0x75, 0x00, 0x6C, 0x00, 0x73, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F006500790065005F00700075006C0073006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121237,
+            "game_05_eyewall_destroy", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x65, 0x00, 0x79, 0x00, 0x65, 0x00,
+                    0x77, 0x00, 0x61, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x5F, 0x00, 0x64, 0x00, 0x65, 0x00, 0x73, 0x00,
+                    0x74, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x79, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F00650079006500770061006C006C005F00640065007300740072006F007900",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121238,
+            "game_05_eyewall_bounce", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x35, 0x00, 0x5F, 0x00, 0x6D, 0x00,
+                    0x69, 0x00, 0x72, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x65, 0x00, 0x79, 0x00, 0x65, 0x00,
+                    0x77, 0x00, 0x61, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x5F, 0x00, 0x62, 0x00, 0x6F, 0x00, 0x75, 0x00,
+                    0x6E, 0x00, 0x63, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300035005F006D006900720072006F0072005F00740065006D0070006C0065002F00650079006500770061006C006C005F0062006F0075006E0063006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121239,
+            "game_06_fallingblock_boss_shake", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x62, 0x00, 0x6C, 0x00,
+                    0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x62, 0x00, 0x6F, 0x00, 0x73, 0x00, 0x73, 0x00,
+                    0x5F, 0x00, 0x73, 0x00, 0x68, 0x00, 0x61, 0x00, 0x6B, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00660061006C006C0062006C006F0063006B005F0062006F00730073005F007300680061006B006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121240,
+            "game_06_fallingblock_boss_impact", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x62, 0x00, 0x6C, 0x00,
+                    0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x62, 0x00, 0x6F, 0x00, 0x73, 0x00, 0x73, 0x00,
+                    0x5F, 0x00, 0x69, 0x00, 0x6D, 0x00, 0x70, 0x00, 0x61, 0x00, 0x63, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00660061006C006C0062006C006F0063006B005F0062006F00730073005F0069006D007000610063007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121241,
+            "game_06_crushblock_activate", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x75, 0x00, 0x73, 0x00, 0x68, 0x00, 0x62, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x61, 0x00, 0x63, 0x00, 0x74, 0x00,
+                    0x69, 0x00, 0x76, 0x00, 0x61, 0x00, 0x74, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006300720075007300680062006C006F0063006B005F0061006300740069007600610074006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121242,
+            "game_06_crushblock_move_loop", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x75, 0x00, 0x73, 0x00, 0x68, 0x00, 0x62, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x6D, 0x00, 0x6F, 0x00, 0x76, 0x00,
+                    0x65, 0x00, 0x5F, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x6F, 0x00, 0x70, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006300720075007300680062006C006F0063006B005F006D006F00760065005F006C006F006F007000",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121243,
+            "game_06_crushblock_move_loop_covert", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x75, 0x00, 0x73, 0x00, 0x68, 0x00, 0x62, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x6D, 0x00, 0x6F, 0x00, 0x76, 0x00,
+                    0x65, 0x00, 0x5F, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x6F, 0x00, 0x70, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x76, 0x00, 0x65, 0x00, 0x72, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006300720075007300680062006C006F0063006B005F006D006F00760065005F006C006F006F0070005F0063006F007600650072007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121244,
+            "game_06_crushblock_impact", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x75, 0x00, 0x73, 0x00, 0x68, 0x00, 0x62, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x69, 0x00, 0x6D, 0x00, 0x70, 0x00,
+                    0x61, 0x00, 0x63, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006300720075007300680062006C006F0063006B005F0069006D007000610063007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121245,
+            "game_06_crushblock_return_loop", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x75, 0x00, 0x73, 0x00, 0x68, 0x00, 0x62, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x74, 0x00,
+                    0x75, 0x00, 0x72, 0x00, 0x6E, 0x00, 0x5F, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x6F, 0x00, 0x70, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006300720075007300680062006C006F0063006B005F00720065007400750072006E005F006C006F006F007000",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121246,
+            "game_06_crushblock_rest", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x75, 0x00, 0x73, 0x00, 0x68, 0x00, 0x62, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x73, 0x00,
+                    0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006300720075007300680062006C006F0063006B005F007200650073007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121247,
+            "game_06_crushblock_rest_waypoint", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x72, 0x00, 0x75, 0x00, 0x73, 0x00, 0x68, 0x00, 0x62, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x73, 0x00,
+                    0x74, 0x00, 0x5F, 0x00, 0x77, 0x00, 0x61, 0x00, 0x79, 0x00, 0x70, 0x00, 0x6F, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006300720075007300680062006C006F0063006B005F0072006500730074005F0077006100790070006F0069006E007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121248,
+            "game_06_badeline_freakout_1", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x61, 0x00, 0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00, 0x6B, 0x00,
+                    0x6F, 0x00, 0x75, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x31, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006100640065006C0069006E0065005F0066007200650061006B006F00750074005F003100",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121249,
+            "game_06_badeline_freakout_2", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x61, 0x00, 0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00, 0x6B, 0x00,
+                    0x6F, 0x00, 0x75, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x32, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006100640065006C0069006E0065005F0066007200650061006B006F00750074005F003200",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121250,
+            "game_06_badeline_freakout_3", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x61, 0x00, 0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00, 0x6B, 0x00,
+                    0x6F, 0x00, 0x75, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x33, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006100640065006C0069006E0065005F0066007200650061006B006F00750074005F003300",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121251,
+            "game_06_badeline_freakout_4", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x61, 0x00, 0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00, 0x6B, 0x00,
+                    0x6F, 0x00, 0x75, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x34, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006100640065006C0069006E0065005F0066007200650061006B006F00750074005F003400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121252,
+            "game_06_badeline_freakout_5", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x61, 0x00, 0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00, 0x6B, 0x00,
+                    0x6F, 0x00, 0x75, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x35, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006100640065006C0069006E0065005F0066007200650061006B006F00750074005F003500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121253,
+            "game_06_badeline_featherslice", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x61, 0x00, 0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00,
+                    0x65, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x73, 0x00, 0x6C, 0x00, 0x69, 0x00, 0x63, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006100640065006C0069006E0065005F0066006500610074006800650072005F0073006C00690063006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121254,
+            "game_06_badelinepull_whooshdown", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x61, 0x00, 0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x70, 0x00, 0x75, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x5F, 0x00,
+                    0x77, 0x00, 0x68, 0x00, 0x6F, 0x00, 0x6F, 0x00, 0x73, 0x00, 0x68, 0x00, 0x64, 0x00, 0x6F, 0x00,
+                    0x77, 0x00, 0x6E, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006100640065006C0069006E0065005F00700075006C006C005F00770068006F006F007300680064006F0077006E00",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121255,
+            "game_06_badelinepull_impact", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x61, 0x00, 0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x70, 0x00, 0x75, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x5F, 0x00,
+                    0x69, 0x00, 0x6D, 0x00, 0x70, 0x00, 0x61, 0x00, 0x63, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006100640065006C0069006E0065005F00700075006C006C005F0069006D007000610063007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121256,
+            "game_06_badelinepull_rumble_loop", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x61, 0x00, 0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x70, 0x00, 0x75, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x5F, 0x00,
+                    0x72, 0x00, 0x75, 0x00, 0x6D, 0x00, 0x62, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x6C, 0x00,
+                    0x6F, 0x00, 0x6F, 0x00, 0x70, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006100640065006C0069006E0065005F00700075006C006C005F00720075006D0062006C0065005F006C006F006F007000",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121257,
+            "game_06_badelinepull_cliffbreak", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x61, 0x00, 0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x70, 0x00, 0x75, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x5F, 0x00,
+                    0x63, 0x00, 0x6C, 0x00, 0x69, 0x00, 0x66, 0x00, 0x66, 0x00, 0x62, 0x00, 0x72, 0x00, 0x65, 0x00,
+                    0x61, 0x00, 0x6B, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006100640065006C0069006E0065005F00700075006C006C005F0063006C0069006600660062007200650061006B00",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121258,
+            "game_06_fall_spike_smash", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x70, 0x00, 0x69, 0x00, 0x6B, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x73, 0x00, 0x6D, 0x00, 0x61, 0x00,
+                    0x73, 0x00, 0x68, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00660061006C006C005F007300700069006B0065005F0073006D00610073006800",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121259,
+            "game_06_supersecret_torch_1", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x75, 0x00, 0x70, 0x00, 0x65, 0x00, 0x72, 0x00, 0x73, 0x00,
+                    0x65, 0x00, 0x63, 0x00, 0x72, 0x00, 0x65, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x6F, 0x00,
+                    0x72, 0x00, 0x63, 0x00, 0x68, 0x00, 0x5F, 0x00, 0x31, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00730075007000650072007300650063007200650074005F0074006F007200630068005F003100",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121260,
+            "game_06_supersecret_torch_2", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x75, 0x00, 0x70, 0x00, 0x65, 0x00, 0x72, 0x00, 0x73, 0x00,
+                    0x65, 0x00, 0x63, 0x00, 0x72, 0x00, 0x65, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x6F, 0x00,
+                    0x72, 0x00, 0x63, 0x00, 0x68, 0x00, 0x5F, 0x00, 0x32, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00730075007000650072007300650063007200650074005F0074006F007200630068005F003200",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121261,
+            "game_06_supersecret_torch_3", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x75, 0x00, 0x70, 0x00, 0x65, 0x00, 0x72, 0x00, 0x73, 0x00,
+                    0x65, 0x00, 0x63, 0x00, 0x72, 0x00, 0x65, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x6F, 0x00,
+                    0x72, 0x00, 0x63, 0x00, 0x68, 0x00, 0x5F, 0x00, 0x33, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00730075007000650072007300650063007200650074005F0074006F007200630068005F003300",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121262,
+            "game_06_supersecret_torch_4", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x75, 0x00, 0x70, 0x00, 0x65, 0x00, 0x72, 0x00, 0x73, 0x00,
+                    0x65, 0x00, 0x63, 0x00, 0x72, 0x00, 0x65, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x6F, 0x00,
+                    0x72, 0x00, 0x63, 0x00, 0x68, 0x00, 0x5F, 0x00, 0x34, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00730075007000650072007300650063007200650074005F0074006F007200630068005F003400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121263,
+            "game_06_supersecret_dashflavour", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x75, 0x00, 0x70, 0x00, 0x65, 0x00, 0x72, 0x00, 0x73, 0x00,
+                    0x65, 0x00, 0x63, 0x00, 0x72, 0x00, 0x65, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x64, 0x00, 0x61, 0x00,
+                    0x73, 0x00, 0x68, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x61, 0x00, 0x76, 0x00, 0x6F, 0x00, 0x75, 0x00,
+                    0x72, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00730075007000650072007300650063007200650074005F00640061007300680066006C00610076006F0075007200",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121264,
+            "game_06_supersecret_heartappear", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x75, 0x00, 0x70, 0x00, 0x65, 0x00, 0x72, 0x00, 0x73, 0x00,
+                    0x65, 0x00, 0x63, 0x00, 0x72, 0x00, 0x65, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x61, 0x00, 0x72, 0x00, 0x74, 0x00, 0x61, 0x00, 0x70, 0x00, 0x70, 0x00, 0x65, 0x00, 0x61, 0x00,
+                    0x72, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00730075007000650072007300650063007200650074005F0068006500610072007400610070007000650061007200",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121265,
+            "game_06_pinballbumper_hit", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x70, 0x00, 0x69, 0x00, 0x6E, 0x00, 0x62, 0x00, 0x61, 0x00, 0x6C, 0x00,
+                    0x6C, 0x00, 0x62, 0x00, 0x75, 0x00, 0x6D, 0x00, 0x70, 0x00, 0x65, 0x00, 0x72, 0x00, 0x5F, 0x00,
+                    0x68, 0x00, 0x69, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00700069006E00620061006C006C00620075006D007000650072005F00680069007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121266,
+            "game_06_pinballbumper_reset", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x70, 0x00, 0x69, 0x00, 0x6E, 0x00, 0x62, 0x00, 0x61, 0x00, 0x6C, 0x00,
+                    0x6C, 0x00, 0x62, 0x00, 0x75, 0x00, 0x6D, 0x00, 0x70, 0x00, 0x65, 0x00, 0x72, 0x00, 0x5F, 0x00,
+                    0x72, 0x00, 0x65, 0x00, 0x73, 0x00, 0x65, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F00700069006E00620061006C006C00620075006D007000650072005F0072006500730065007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121267,
+            "game_06_feather_get", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x67, 0x00, 0x65, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0066006500610074006800650072005F00670065007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121268,
+            "game_06_feather_renew", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x65, 0x00, 0x77, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0066006500610074006800650072005F00720065006E0065007700",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121269,
+            "game_06_feather_reappear", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00, 0x70, 0x00, 0x70, 0x00, 0x65, 0x00,
+                    0x61, 0x00, 0x72, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0066006500610074006800650072005F0072006500610070007000650061007200",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121270,
+            "game_06_feather_state_loop", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x73, 0x00, 0x74, 0x00, 0x61, 0x00, 0x74, 0x00, 0x65, 0x00, 0x5F, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x6F, 0x00, 0x70, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0066006500610074006800650072005F00730074006100740065005F006C006F006F007000",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121271,
+            "game_06_feather_state_warning", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x73, 0x00, 0x74, 0x00, 0x61, 0x00, 0x74, 0x00, 0x65, 0x00, 0x5F, 0x00,
+                    0x77, 0x00, 0x61, 0x00, 0x72, 0x00, 0x6E, 0x00, 0x69, 0x00, 0x6E, 0x00, 0x67, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0066006500610074006800650072005F00730074006100740065005F007700610072006E0069006E006700",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121272,
+            "game_06_feather_state_end", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x73, 0x00, 0x74, 0x00, 0x61, 0x00, 0x74, 0x00, 0x65, 0x00, 0x5F, 0x00,
+                    0x65, 0x00, 0x6E, 0x00, 0x64, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0066006500610074006800650072005F00730074006100740065005F0065006E006400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121273,
+            "game_06_feather_state_bump", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x73, 0x00, 0x74, 0x00, 0x61, 0x00, 0x74, 0x00, 0x65, 0x00, 0x5F, 0x00,
+                    0x62, 0x00, 0x75, 0x00, 0x6D, 0x00, 0x70, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0066006500610074006800650072005F00730074006100740065005F00620075006D007000",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121274,
+            "game_06_feather_bubble_get", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x62, 0x00, 0x75, 0x00, 0x62, 0x00, 0x62, 0x00, 0x6C, 0x00, 0x65, 0x00,
+                    0x5F, 0x00, 0x67, 0x00, 0x65, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0066006500610074006800650072005F0062007500620062006C0065005F00670065007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121275,
+            "game_06_feather_bubble_renew", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x62, 0x00, 0x75, 0x00, 0x62, 0x00, 0x62, 0x00, 0x6C, 0x00, 0x65, 0x00,
+                    0x5F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x65, 0x00, 0x77, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0066006500610074006800650072005F0062007500620062006C0065005F00720065006E0065007700",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121276,
+            "game_06_feather_bubble_bounce", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x65, 0x00, 0x61, 0x00, 0x74, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x62, 0x00, 0x75, 0x00, 0x62, 0x00, 0x62, 0x00, 0x6C, 0x00, 0x65, 0x00,
+                    0x5F, 0x00, 0x62, 0x00, 0x6F, 0x00, 0x75, 0x00, 0x6E, 0x00, 0x63, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0066006500610074006800650072005F0062007500620062006C0065005F0062006F0075006E0063006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121277,
+            "game_06_scaryhair_move", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x63, 0x00, 0x61, 0x00, 0x72, 0x00, 0x79, 0x00, 0x68, 0x00,
+                    0x61, 0x00, 0x69, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x6D, 0x00, 0x6F, 0x00, 0x76, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F007300630061007200790068006100690072005F006D006F0076006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121278,
+            "game_06_scaryhair_whoosh", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x63, 0x00, 0x61, 0x00, 0x72, 0x00, 0x79, 0x00, 0x68, 0x00,
+                    0x61, 0x00, 0x69, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x77, 0x00, 0x68, 0x00, 0x6F, 0x00, 0x6F, 0x00,
+                    0x73, 0x00, 0x68, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F007300630061007200790068006100690072005F00770068006F006F0073006800",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121279,
+            "game_06_boss_spikes_burst", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x6F, 0x00, 0x73, 0x00, 0x73, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x70, 0x00, 0x69, 0x00, 0x6B, 0x00, 0x65, 0x00, 0x73, 0x00, 0x5F, 0x00, 0x62, 0x00, 0x75, 0x00,
+                    0x72, 0x00, 0x73, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F0062006F00730073005F007300700069006B00650073005F0062007500720073007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121280,
+            "game_06_hug_image_1", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x68, 0x00, 0x75, 0x00, 0x67, 0x00, 0x5F, 0x00, 0x69, 0x00, 0x6D, 0x00,
+                    0x61, 0x00, 0x67, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x31, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006800750067005F0069006D006100670065005F003100",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121281,
+            "game_06_hug_image_2", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x68, 0x00, 0x75, 0x00, 0x67, 0x00, 0x5F, 0x00, 0x69, 0x00, 0x6D, 0x00,
+                    0x61, 0x00, 0x67, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x32, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006800750067005F0069006D006100670065005F003200",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121282,
+            "game_06_hug_image_3", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x68, 0x00, 0x75, 0x00, 0x67, 0x00, 0x5F, 0x00, 0x69, 0x00, 0x6D, 0x00,
+                    0x61, 0x00, 0x67, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x33, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006800750067005F0069006D006100670065005F003300",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121283,
+            "game_06_hug_badelineglow", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x68, 0x00, 0x75, 0x00, 0x67, 0x00, 0x5F, 0x00, 0x62, 0x00, 0x61, 0x00,
+                    0x64, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x69, 0x00, 0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x67, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x77, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006800750067005F0062006100640065006C0069006E0065005F0067006C006F007700",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121284,
+            "game_06_hug_levelup_text_in", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x68, 0x00, 0x75, 0x00, 0x67, 0x00, 0x5F, 0x00, 0x6C, 0x00, 0x65, 0x00,
+                    0x76, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x75, 0x00, 0x70, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x78, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x69, 0x00, 0x6E, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006800750067005F006C006500760065006C00750070005F0074006500780074005F0069006E00",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121285,
+            "game_06_hug_levelup_text_out", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x36, 0x00, 0x5F, 0x00, 0x72, 0x00,
+                    0x65, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x6F, 0x00,
+                    0x6E, 0x00, 0x2F, 0x00, 0x68, 0x00, 0x75, 0x00, 0x67, 0x00, 0x5F, 0x00, 0x6C, 0x00, 0x65, 0x00,
+                    0x76, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x75, 0x00, 0x70, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x78, 0x00, 0x74, 0x00, 0x5F, 0x00, 0x6F, 0x00, 0x75, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300036005F007200650066006C0065006300740069006F006E002F006800750067005F006C006500760065006C00750070005F0074006500780074005F006F0075007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121286,
+            "game_07_altitudecount", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x37, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x75, 0x00, 0x6D, 0x00, 0x6D, 0x00, 0x69, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x61, 0x00, 0x6C, 0x00,
+                    0x74, 0x00, 0x69, 0x00, 0x74, 0x00, 0x75, 0x00, 0x64, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x75, 0x00, 0x6E, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300037005F00730075006D006D00690074002F0061006C007400690074007500640065005F0063006F0075006E007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121287,
+            "game_07_checkpointconfetti", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x37, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x75, 0x00, 0x6D, 0x00, 0x6D, 0x00, 0x69, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x68, 0x00,
+                    0x65, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x70, 0x00, 0x6F, 0x00, 0x69, 0x00, 0x6E, 0x00, 0x74, 0x00,
+                    0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x66, 0x00, 0x65, 0x00, 0x74, 0x00, 0x74, 0x00,
+                    0x69, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300037005F00730075006D006D00690074002F0063006800650063006B0070006F0069006E0074005F0063006F006E0066006500740074006900",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121288,
+            "game_07_gem_get", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x37, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x75, 0x00, 0x6D, 0x00, 0x6D, 0x00, 0x69, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x5F, 0x00, 0x67, 0x00, 0x65, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300037005F00730075006D006D00690074002F00670065006D005F00670065007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121289,
+            "game_07_gem_unlock_1", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x37, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x75, 0x00, 0x6D, 0x00, 0x6D, 0x00, 0x69, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x5F, 0x00, 0x75, 0x00, 0x6E, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00,
+                    0x5F, 0x00, 0x31, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300037005F00730075006D006D00690074002F00670065006D005F0075006E006C006F0063006B005F003100",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121290,
+            "game_07_gem_unlock_2", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x37, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x75, 0x00, 0x6D, 0x00, 0x6D, 0x00, 0x69, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x5F, 0x00, 0x75, 0x00, 0x6E, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00,
+                    0x5F, 0x00, 0x32, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300037005F00730075006D006D00690074002F00670065006D005F0075006E006C006F0063006B005F003200",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121291,
+            "game_07_gem_unlock_3", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x37, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x75, 0x00, 0x6D, 0x00, 0x6D, 0x00, 0x69, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x5F, 0x00, 0x75, 0x00, 0x6E, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00,
+                    0x5F, 0x00, 0x33, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300037005F00730075006D006D00690074002F00670065006D005F0075006E006C006F0063006B005F003300",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121292,
+            "game_07_gem_unlock_4", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x37, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x75, 0x00, 0x6D, 0x00, 0x6D, 0x00, 0x69, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x5F, 0x00, 0x75, 0x00, 0x6E, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00,
+                    0x5F, 0x00, 0x34, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300037005F00730075006D006D00690074002F00670065006D005F0075006E006C006F0063006B005F003400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121293,
+            "game_07_gem_unlock_5", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x37, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x75, 0x00, 0x6D, 0x00, 0x6D, 0x00, 0x69, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x5F, 0x00, 0x75, 0x00, 0x6E, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00,
+                    0x5F, 0x00, 0x35, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300037005F00730075006D006D00690074002F00670065006D005F0075006E006C006F0063006B005F003500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121294,
+            "game_07_gem_unlock_6", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x37, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x75, 0x00, 0x6D, 0x00, 0x6D, 0x00, 0x69, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x5F, 0x00, 0x75, 0x00, 0x6E, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00,
+                    0x5F, 0x00, 0x36, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300037005F00730075006D006D00690074002F00670065006D005F0075006E006C006F0063006B005F003600",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121295,
+            "game_07_gem_unlock_complete", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x37, 0x00, 0x5F, 0x00, 0x73, 0x00,
+                    0x75, 0x00, 0x6D, 0x00, 0x6D, 0x00, 0x69, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x65, 0x00,
+                    0x6D, 0x00, 0x5F, 0x00, 0x75, 0x00, 0x6E, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00,
+                    0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6D, 0x00, 0x70, 0x00, 0x6C, 0x00, 0x65, 0x00, 0x74, 0x00,
+                    0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300037005F00730075006D006D00690074002F00670065006D005F0075006E006C006F0063006B005F0063006F006D0070006C00650074006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121296,
+            "game_09_frontdoor_heartfill", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x6E, 0x00,
+                    0x74, 0x00, 0x64, 0x00, 0x6F, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x68, 0x00, 0x65, 0x00,
+                    0x61, 0x00, 0x72, 0x00, 0x74, 0x00, 0x66, 0x00, 0x69, 0x00, 0x6C, 0x00, 0x6C, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F00660072006F006E00740064006F006F0072005F0068006500610072007400660069006C006C00",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121297,
+            "game_09_frontdoor_unlock", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x66, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x6E, 0x00,
+                    0x74, 0x00, 0x64, 0x00, 0x6F, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x75, 0x00, 0x6E, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F00660072006F006E00740064006F006F0072005F0075006E006C006F0063006B00",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121298,
+            "game_09_conveyor_activate", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x76, 0x00,
+                    0x65, 0x00, 0x79, 0x00, 0x6F, 0x00, 0x72, 0x00, 0x5F, 0x00, 0x61, 0x00, 0x63, 0x00, 0x74, 0x00,
+                    0x69, 0x00, 0x76, 0x00, 0x61, 0x00, 0x74, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F0063006F006E007600650079006F0072005F0061006300740069007600610074006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121299,
+            "game_09_hotpinball_activate", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x68, 0x00, 0x6F, 0x00, 0x74, 0x00, 0x70, 0x00,
+                    0x69, 0x00, 0x6E, 0x00, 0x62, 0x00, 0x61, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x5F, 0x00, 0x61, 0x00,
+                    0x63, 0x00, 0x74, 0x00, 0x69, 0x00, 0x76, 0x00, 0x61, 0x00, 0x74, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F0068006F007400700069006E00620061006C006C005F0061006300740069007600610074006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121300,
+            "game_09_bounceblock_touch", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x6F, 0x00, 0x75, 0x00, 0x6E, 0x00,
+                    0x63, 0x00, 0x65, 0x00, 0x62, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00,
+                    0x74, 0x00, 0x6F, 0x00, 0x75, 0x00, 0x63, 0x00, 0x68, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F0062006F0075006E006300650062006C006F0063006B005F0074006F00750063006800",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121301,
+            "game_09_bounceblock_break", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x6F, 0x00, 0x75, 0x00, 0x6E, 0x00,
+                    0x63, 0x00, 0x65, 0x00, 0x62, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00,
+                    0x62, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00, 0x6B, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F0062006F0075006E006300650062006C006F0063006B005F0062007200650061006B00",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121302,
+            "game_09_bounceblock_reappear", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x6F, 0x00, 0x75, 0x00, 0x6E, 0x00,
+                    0x63, 0x00, 0x65, 0x00, 0x62, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00,
+                    0x72, 0x00, 0x65, 0x00, 0x61, 0x00, 0x70, 0x00, 0x70, 0x00, 0x65, 0x00, 0x61, 0x00, 0x72, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F0062006F0075006E006300650062006C006F0063006B005F0072006500610070007000650061007200",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121303,
+            "game_09_iceblock_touch", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x69, 0x00, 0x63, 0x00, 0x65, 0x00, 0x62, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x6F, 0x00, 0x75, 0x00,
+                    0x63, 0x00, 0x68, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F0069006300650062006C006F0063006B005F0074006F00750063006800",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121304,
+            "game_09_iceblock_reappear", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x69, 0x00, 0x63, 0x00, 0x65, 0x00, 0x62, 0x00,
+                    0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x6B, 0x00, 0x5F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00,
+                    0x70, 0x00, 0x70, 0x00, 0x65, 0x00, 0x61, 0x00, 0x72, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F0069006300650062006C006F0063006B005F0072006500610070007000650061007200",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121305,
+            "game_09_switch_to_cold", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x77, 0x00, 0x69, 0x00, 0x74, 0x00,
+                    0x63, 0x00, 0x68, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x6F, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00,
+                    0x6C, 0x00, 0x64, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F007300770069007400630068005F0074006F005F0063006F006C006400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121306,
+            "game_09_switch_to_hot", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x77, 0x00, 0x69, 0x00, 0x74, 0x00,
+                    0x63, 0x00, 0x68, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x6F, 0x00, 0x5F, 0x00, 0x68, 0x00, 0x6F, 0x00,
+                    0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F007300770069007400630068005F0074006F005F0068006F007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121307,
+            "game_09_switch_shutdown", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x73, 0x00, 0x77, 0x00, 0x69, 0x00, 0x74, 0x00,
+                    0x63, 0x00, 0x68, 0x00, 0x5F, 0x00, 0x64, 0x00, 0x69, 0x00, 0x65, 0x00, 0x73, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F007300770069007400630068005F006400690065007300",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121308,
+            "game_09_iceball_break", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x69, 0x00, 0x63, 0x00, 0x65, 0x00, 0x62, 0x00,
+                    0x61, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x5F, 0x00, 0x62, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00,
+                    0x6B, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F00690063006500620061006C006C005F0062007200650061006B00",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121309,
+            "game_09_pinballbumper_hit", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x70, 0x00, 0x69, 0x00, 0x6E, 0x00, 0x62, 0x00,
+                    0x61, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x62, 0x00, 0x75, 0x00, 0x6D, 0x00, 0x70, 0x00, 0x65, 0x00,
+                    0x72, 0x00, 0x5F, 0x00, 0x68, 0x00, 0x69, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F00700069006E00620061006C006C00620075006D007000650072005F00680069007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121310,
+            "game_09_risingthreat_loop", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x67, 0x00,
+                    0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x30, 0x00, 0x39, 0x00, 0x5F, 0x00, 0x63, 0x00,
+                    0x6F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x2F, 0x00, 0x72, 0x00, 0x69, 0x00, 0x73, 0x00, 0x69, 0x00,
+                    0x6E, 0x00, 0x67, 0x00, 0x5F, 0x00, 0x74, 0x00, 0x68, 0x00, 0x72, 0x00, 0x65, 0x00, 0x61, 0x00,
+                    0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F00670061006D0065002F00300039005F0063006F00720065002F0072006900730069006E0067005F00740068007200650061007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121311,
+            "game_10_lightning_strike", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x6C, 0x00, 0x69, 0x00, 0x67, 0x00, 0x68, 0x00,
+                    0x74, 0x00, 0x6E, 0x00, 0x69, 0x00, 0x6E, 0x00, 0x67, 0x00, 0x5F, 0x00, 0x73, 0x00, 0x74, 0x00,
+                    0x72, 0x00, 0x69, 0x00, 0x6B, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F006C0069006700680074006E0069006E0067005F0073007400720069006B006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121312,
+            "game_10_heart_door", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x68, 0x00, 0x65, 0x00, 0x61, 0x00, 0x72, 0x00,
+                    0x74, 0x00, 0x5F, 0x00, 0x64, 0x00, 0x6F, 0x00, 0x6F, 0x00, 0x72, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F00680065006100720074005F0064006F006F007200",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121313,
+            "game_10_bird_camera_pan_up", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x69, 0x00, 0x72, 0x00, 0x64, 0x00,
+                    0x5F, 0x00, 0x63, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x72, 0x00, 0x61, 0x00, 0x5F, 0x00,
+                    0x70, 0x00, 0x61, 0x00, 0x6E, 0x00, 0x5F, 0x00, 0x75, 0x00, 0x70, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F0062006900720064005F00630061006D006500720061005F00700061006E005F0075007000",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121314,
+            "game_10_bird_fly_uptonext", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x69, 0x00, 0x72, 0x00, 0x64, 0x00,
+                    0x5F, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x79, 0x00, 0x5F, 0x00, 0x75, 0x00, 0x70, 0x00, 0x74, 0x00,
+                    0x6F, 0x00, 0x6E, 0x00, 0x65, 0x00, 0x78, 0x00, 0x74, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F0062006900720064005F0066006C0079005F007500700074006F006E00650078007400",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121315,
+            "game_10_bird_startle", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x69, 0x00, 0x72, 0x00, 0x64, 0x00,
+                    0x5F, 0x00, 0x73, 0x00, 0x74, 0x00, 0x61, 0x00, 0x72, 0x00, 0x74, 0x00, 0x6C, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F0062006900720064005F00730074006100720074006C006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121316,
+            "game_10_bird_relocate", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x69, 0x00, 0x72, 0x00, 0x64, 0x00,
+                    0x5F, 0x00, 0x72, 0x00, 0x65, 0x00, 0x6C, 0x00, 0x6F, 0x00, 0x63, 0x00, 0x61, 0x00, 0x74, 0x00,
+                    0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F0062006900720064005F00720065006C006F006300610074006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121317,
+            "game_10_bird_wingflap", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x69, 0x00, 0x72, 0x00, 0x64, 0x00,
+                    0x5F, 0x00, 0x77, 0x00, 0x69, 0x00, 0x6E, 0x00, 0x67, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x61, 0x00,
+                    0x70, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F0062006900720064005F00770069006E00670066006C0061007000",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121318,
+            "game_10_bird_flyuproll", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x69, 0x00, 0x72, 0x00, 0x64, 0x00,
+                    0x5F, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x79, 0x00, 0x75, 0x00, 0x70, 0x00, 0x72, 0x00, 0x6F, 0x00,
+                    0x6C, 0x00, 0x6C, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F0062006900720064005F0066006C0079007500700072006F006C006C00",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121319,
+            "game_10_bird_throw", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x69, 0x00, 0x72, 0x00, 0x64, 0x00,
+                    0x5F, 0x00, 0x74, 0x00, 0x68, 0x00, 0x72, 0x00, 0x6F, 0x00, 0x77, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F0062006900720064005F007400680072006F007700",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121320,
+            "game_10_bird_flappyscene_entry", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x69, 0x00, 0x72, 0x00, 0x64, 0x00,
+                    0x5F, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x61, 0x00, 0x70, 0x00, 0x70, 0x00, 0x79, 0x00, 0x73, 0x00,
+                    0x63, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x65, 0x00, 0x5F, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00,
+                    0x72, 0x00, 0x79, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F0062006900720064005F0066006C0061007000700079007300630065006E0065005F0065006E00740072007900",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+        catalog.RegisterDefinition(new SourceMemberDefinition(
+            "Celeste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Celeste.SFX", 67121321,
+            "game_10_bird_flappyscene", SourceMemberKind.Field, 32854, "System.String", -1, -1, 0,
+            Array.Empty<SourceDeclaredAttribute>(), true,
+            SourceMetadataConstant.Decode("System.String",
+                new byte[]
+                {
+                    0x65, 0x00, 0x76, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x3A, 0x00, 0x2F, 0x00, 0x6E, 0x00,
+                    0x65, 0x00, 0x77, 0x00, 0x5F, 0x00, 0x63, 0x00, 0x6F, 0x00, 0x6E, 0x00, 0x74, 0x00, 0x65, 0x00,
+                    0x6E, 0x00, 0x74, 0x00, 0x2F, 0x00, 0x67, 0x00, 0x61, 0x00, 0x6D, 0x00, 0x65, 0x00, 0x2F, 0x00,
+                    0x31, 0x00, 0x30, 0x00, 0x5F, 0x00, 0x66, 0x00, 0x61, 0x00, 0x72, 0x00, 0x65, 0x00, 0x77, 0x00,
+                    0x65, 0x00, 0x6C, 0x00, 0x6C, 0x00, 0x2F, 0x00, 0x62, 0x00, 0x69, 0x00, 0x72, 0x00, 0x64, 0x00,
+                    0x5F, 0x00, 0x66, 0x00, 0x6C, 0x00, 0x61, 0x00, 0x70, 0x00, 0x70, 0x00, 0x79, 0x00, 0x73, 0x00,
+                    0x63, 0x00, 0x65, 0x00, 0x6E, 0x00, 0x65, 0x00
+                }), "System.String",
+            "6500760065006E0074003A002F006E00650077005F0063006F006E00740065006E0074002F00670061006D0065002F00310030005F006600610072006500770065006C006C002F0062006900720064005F0066006C0061007000700079007300630065006E006500",
+            "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            new global::Celeste.Core.Reflection.Types.SourceTypeReference(
+                global::Celeste.Core.Reflection.Types.SourceTypeReferenceKind.Named,
+                assemblyIdentity: "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                typeIdentity: "System.String")));
+    }
+}

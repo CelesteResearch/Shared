@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>12.0</LangVersion>
+        <AssemblyName>Celeste.Formats.Save</AssemblyName>
+        <RootNamespace>Celeste.Formats.Save</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+</Project>

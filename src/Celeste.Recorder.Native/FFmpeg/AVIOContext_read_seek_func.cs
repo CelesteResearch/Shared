@@ -1,0 +1,18 @@
+using System;
+using System.Runtime.InteropServices;
+
+namespace FFmpeg
+{
+    public struct AVIOContext_read_seek_func
+    {
+        public nint Pointer;
+
+        public static implicit operator AVIOContext_read_seek_func(AVIOContext_read_seek func)
+        {
+            return new AVIOContext_read_seek_func
+            {
+                Pointer = ((func == null) ? IntPtr.Zero : Marshal.GetFunctionPointerForDelegate(func))
+            };
+        }
+    }
+}

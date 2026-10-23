@@ -1,0 +1,73 @@
+using Celeste.Scene.Tracking;
+
+namespace Celeste.Game.Entities.Tracking.Metadata
+{
+    internal static class OriginalSceneDefinitionMembership
+    {
+        internal static void ConfigureOriginal(SceneEntityCatalog catalog)
+        {
+            catalog.RemoveDefinitions(new string[]
+            {
+                "Celeste.Decal.FlagSwapImage",
+                "Celeste.Mod.Entities.ActivateDreamBlocksTrigger",
+                "Celeste.Mod.Entities.AmbienceTrigger",
+                "Celeste.Mod.Entities.AmbienceVolumeTrigger",
+                "Celeste.Mod.Entities.BadelineOldsiteEnd",
+                "Celeste.Mod.Entities.CSGEN_GenericStrawberrySeeds",
+                "Celeste.Mod.Entities.CassetteListener",
+                "Celeste.Mod.Entities.ChangeInventoryTrigger",
+                "Celeste.Mod.Entities.CompleteAreaTrigger",
+                "Celeste.Mod.Entities.CoreModeTrigger",
+                "Celeste.Mod.Entities.CrystalShatterTrigger",
+                "Celeste.Mod.Entities.CustomBirdTutorial",
+                "Celeste.Mod.Entities.CustomBirdTutorialTrigger",
+                "Celeste.Mod.Entities.CustomCoreMessage",
+                "Celeste.Mod.Entities.CustomHeightDisplay",
+                "Celeste.Mod.Entities.CustomHeightDisplayTrigger",
+                "Celeste.Mod.Entities.CustomMemorial",
+                "Celeste.Mod.Entities.CustomMemorialText",
+                "Celeste.Mod.Entities.CustomNPC",
+                "Celeste.Mod.Entities.DialogCutscene",
+                "Celeste.Mod.Entities.DialogCutsceneTrigger",
+                "Celeste.Mod.Entities.EntityColliderByComponent`1",
+                "Celeste.Mod.Entities.EntityCollider`1",
+                "Celeste.Mod.Entities.EntityRemovedListener",
+                "Celeste.Mod.Entities.EntityTrigger",
+                "Celeste.Mod.Entities.EntityTriggerListener",
+                "Celeste.Mod.Entities.FlagTrigger",
+                "Celeste.Mod.Entities.GenericStrawberrySeed",
+                "Celeste.Mod.Entities.LavaBlockerTrigger",
+                "Celeste.Mod.Entities.MusicLayerTrigger",
+                "Celeste.Mod.Entities.SceneWrappingEntity",
+                "Celeste.Mod.Entities.SceneWrappingEntity`1",
+                "Celeste.Mod.Entities.SmoothCameraOffsetTrigger",
+                "Celeste.Mod.Entities.SpaceControllerBlocker",
+                "Celeste.Mod.Entities.StarClimbGraphicsController",
+                "Celeste.Mod.Entities.TimeRateModifier",
+                "Celeste.Mod.Entities.TriggerSpikesOriginal",
+                "Celeste.Mod.ModuleSettingsButtonConfigUI",
+                "Celeste.Mod.ModuleSettingsKeyboardConfigUI",
+                "Celeste.Mod.UI.CriticalErrorHandler",
+                "Celeste.Mod.UI.MainMenuModOptionsButton",
+                "Celeste.Mod.UI.OuiDependencyDownloader",
+                "Celeste.Mod.UI.OuiFileSelectSlotSubmenu",
+                "Celeste.Mod.UI.OuiGenericMenu",
+                "Celeste.Mod.UI.OuiHelper_ChapterSelect_LevelSet",
+                "Celeste.Mod.UI.OuiHelper_Shutdown",
+                "Celeste.Mod.UI.OuiLoggedProgress",
+                "Celeste.Mod.UI.OuiMapList",
+                "Celeste.Mod.UI.OuiMapSearch",
+                "Celeste.Mod.UI.OuiMapSearch.SearchMenu",
+                "Celeste.Mod.UI.OuiModOptionString",
+                "Celeste.Mod.UI.OuiModOptions",
+                "Celeste.Mod.UI.OuiModToggler",
+                "Celeste.Mod.UI.OuiModUpdateList",
+                "Celeste.Mod.UI.OuiNumberEntry",
+                "Celeste.Mod.UI.OuiOOBE",
+                "Celeste.Mod.UI.OuiSoundTest",
+                "Celeste.Mod.UI.OuiTextEntry",
+                "Celeste.Mod.UI.OuiVersionList",
+            });
+        }
+    }
+}

@@ -1,0 +1,594 @@
+using Celeste.Core.Display;
+using System;
+using System.Collections.Generic;
+using System.Numerics;
+using Celeste.Core.Components;
+using Celeste.Core.Mathematics;
+using Celeste.Core.Mathematics.Easing;
+using Celeste.Core.Mathematics.Extrema;
+using Celeste.Core.Mathematics.LinearAlgebra;
+using Celeste.Core.Rendering;
+using Celeste.Core.Rendering.States;
+using Celeste.Core.Scheduling;
+using Celeste.Game.Execution.Engine;
+using Celeste.Game.Execution.Graphics;
+using Celeste.Scene.Scenes;
+using Celeste.Graphics.Content.Atlas;
+using Celeste.Graphics.Content.VirtualAssets;
+using Celeste.Graphics.Display;
+using Celeste.Graphics.Display.Colors;
+using Celeste.Graphics.Effects.Blur;
+using Celeste.Graphics.Geometry.ThreeD.Billboards;
+using Celeste.Graphics.Geometry.ThreeD.Camera;
+using Celeste.Graphics.Rendering.Buffers;
+using Celeste.Graphics.Rendering.Devices;
+using Celeste.Graphics.Rendering.Effects;
+using Celeste.Graphics.Rendering.Textures;
+using Celeste.Graphics.Rendering.Vertices;
+
+namespace Celeste.Game.Presentation.Mountain.Model
+{
+    public class MountainModelState : IDisposable
+    {
+        public readonly ISourceEngineContext EngineContext;
+        protected ISourceRenderContext Context => ((ISourceRenderEnvironment)EngineContext).CurrentContext;
+        protected SourceGraphicsDevice Device => ((ISourceGraphicsDeviceEnvironment)EngineContext).GraphicsDevice;
+
+        protected IOriginalEngineGraphicsState Metrics =>
+            ((IOriginalEngineGraphicsEnvironment)EngineContext).EngineGraphics;
+
+        protected OriginalMountainResources MountainResources =>
+            ((IOriginalMountainEnvironment)EngineContext).MountainResources;
+
+        protected OriginalGameGraphicsResources GraphicsResources =>
+            (OriginalGameGraphicsResources)((Celeste.Graphics.Content.ISourceGameGraphicsEnvironment)EngineContext)
+            .GameGraphics;
+
+        protected ISourceVectorArithmetic VectorArithmetic =>
+            ((ISourceVectorEnvironment)EngineContext).VectorArithmetic;
+
+        protected ISourceScalarArithmetic ScalarArithmetic =>
+            ((ISourceScalarEnvironment)EngineContext).ScalarArithmetic;
+
+        protected ISourceExtremaArithmetic ExtremaArithmetic =>
+            ((ISourceExtremaEnvironment)EngineContext).ExtremaArithmetic;
+
+        protected ISourceEasingArithmetic EasingArithmetic =>
+            ((ISourceEasingEnvironment)EngineContext).EasingArithmetic;
+
+        public MountainCameraState Camera;
+
+        public Vector3 Forward;
+
+        public float SkyboxOffset;
+
+        public bool LockBufferResizing;
+
+        protected VirtualRenderTarget buffer;
+
+        protected VirtualRenderTarget blurA;
+
+        protected VirtualRenderTarget blurB;
+
+        public static SourceRasterizerState MountainRasterizer = new SourceRasterizerState
+        {
+            CullMode = SourceCullMode.CullClockwiseFace,
+            MultiSampleAntiAlias = true
+        };
+
+        public static SourceRasterizerState CullNoneRasterizer = new SourceRasterizerState
+        {
+            CullMode = SourceCullMode.None,
+            MultiSampleAntiAlias = false
+        };
+
+        public static SourceRasterizerState CullCCRasterizer = new SourceRasterizerState
+        {
+            CullMode = SourceCullMode.CullCounterClockwiseFace,
+            MultiSampleAntiAlias = false
+        };
+
+        public static SourceRasterizerState CullCRasterizer = new SourceRasterizerState
+        {
+            CullMode = SourceCullMode.CullClockwiseFace,
+            MultiSampleAntiAlias = false
+        };
+
+        protected int currState;
+
+        protected int nextState;
+
+        protected int targetState;
+
+        protected float easeState = 1f;
+
+        protected MountainState[] mountainStates = new MountainState[4];
+
+        public Vector3 CoreWallPosition = Vector3.Zero;
+
+        protected SourceVertexBuffer billboardVertices;
+
+        protected SourceIndexBuffer billboardIndices;
+
+        protected SourceVertexPositionColorTexture[] billboardInfo = new SourceVertexPositionColorTexture[2048];
+
+        protected SourceTexture2DResource[] billboardTextures = new SourceTexture2DResource[512];
+
+        protected MountainRing fog;
+
+        protected MountainRing fog2;
+
+        public float NearFogAlpha;
+
+        public float StarEase;
+
+        public float SnowStretch;
+
+        public float SnowSpeedAddition = 1f;
+
+        public float SnowForceFloat;
+
+        protected MountainRing starsky;
+
+        protected MountainRing starfog;
+
+        protected MountainRing stardots0;
+
+        protected MountainRing starstream0;
+
+        protected MountainRing starstream1;
+
+        protected MountainRing starstream2;
+
+        protected bool ignoreCameraRotation;
+
+        protected Quaternion lastCameraRotation;
+
+        protected Vector3 starCenter = new Vector3(0f, 32f, 0f);
+
+        protected float birdTimer;
+
+        public List<SourceVertexPositionColor> DebugPoints = new List<SourceVertexPositionColor>();
+
+        public bool DrawDebugPoints;
+
+        public MountainModelState(ISourceEngineContext engine)
+        {
+            EngineContext = engine;
+            mountainStates[0] = new MountainState(EngineContext, MountainResources.MountainTerrainTextures[0],
+                MountainResources.MountainBuildingTextures[0], MountainResources.MountainSkyboxTextures[0],
+                new PackedColor(1, 8, 23));
+            mountainStates[1] = new MountainState(EngineContext, MountainResources.MountainTerrainTextures[1],
+                MountainResources.MountainBuildingTextures[1], MountainResources.MountainSkyboxTextures[1],
+                new PackedColor(19, 32, 62));
+            mountainStates[2] = new MountainState(EngineContext, MountainResources.MountainTerrainTextures[2],
+                MountainResources.MountainBuildingTextures[2], MountainResources.MountainSkyboxTextures[2],
+                new PackedColor(40, 26, 53));
+            mountainStates[3] = new MountainState(EngineContext, MountainResources.MountainTerrainTextures[0],
+                MountainResources.MountainBuildingTextures[0], MountainResources.MountainSkyboxTextures[0],
+                new PackedColor(1, 8, 23));
+            fog = new MountainRing(EngineContext, 6f, -1f, 20f, 0f, 24, PackedColor.White,
+                MountainResources.MountainFogTexture);
+            fog2 = new MountainRing(EngineContext, 6f, -4f, 10f, 0f, 24, PackedColor.White,
+                MountainResources.MountainFogTexture);
+            starsky = new MountainRing(EngineContext, 18f, -18f, 20f, 0f, 24, PackedColor.White,
+                PackedColor.Transparent,
+                MountainResources.MountainStarSky);
+            starfog = new MountainRing(EngineContext, 10f, -18f, 19.5f, 0f, 24, new PackedColor(2, 9, 21),
+                PackedColor.Transparent, MountainResources.MountainFogTexture);
+            stardots0 = new MountainRing(EngineContext, 16f, -18f, 19f, 0f, 24, PackedColor.White,
+                PackedColor.Transparent,
+                MountainResources.MountainStars, 4f);
+            starstream0 = new MountainRing(EngineContext, 5f, -8f, 18.5f, 0.2f, 80, PackedColor.Black,
+                MountainResources.MountainStarStream);
+            starstream1 = new MountainRing(EngineContext, 4f, -6f, 18f, 1f, 80, new PackedColor(146, 40, 226) * 0.5f,
+                MountainResources.MountainStarStream);
+            starstream2 = new MountainRing(EngineContext, 3f, -4f, 17.9f, 1.4f, 80,
+                new PackedColor(48, 255, 255) * 0.5f,
+                MountainResources.MountainStarStream);
+            ResetRenderTargets();
+            ResetBillboardBuffers();
+        }
+
+        public void SnapState(int state)
+        {
+            currState = (nextState = (targetState = state % mountainStates.Length));
+            easeState = 1f;
+            if (state == 3)
+            {
+                StarEase = 1f;
+            }
+        }
+
+        public void EaseState(int state)
+        {
+            targetState = state % mountainStates.Length;
+            lastCameraRotation = Camera.Rotation;
+        }
+
+        public virtual void Update()
+        {
+            if (currState != nextState)
+            {
+                easeState = ScalarMath.Approach(easeState, 1f,
+                    (float)((nextState == targetState) ? 1 : 4) * EngineContext.DeltaTime, ExtremaArithmetic);
+                if (easeState >= 1f)
+                {
+                    currState = nextState;
+                }
+            }
+            else if (nextState != targetState)
+            {
+                nextState = targetState;
+                easeState = 0f;
+            }
+
+            StarEase = ScalarMath.Approach(StarEase, (nextState == 3) ? 1f : 0f,
+                ((nextState == 3) ? 1.5f : 1f) * EngineContext.DeltaTime, ExtremaArithmetic);
+            SnowForceFloat = ScalarMath.ClampedMap(StarEase, 0.95f, 1f);
+            ignoreCameraRotation = (nextState == 3 && currState != 3 && StarEase < 0.5f) ||
+                                   (nextState != 3 && currState == 3 && StarEase > 0.5f);
+            if (nextState == 3)
+            {
+                SnowStretch = ScalarMath.ClampedMap(StarEase, 0f, 0.25f) * 50f;
+                SnowSpeedAddition = SnowStretch * 4f;
+            }
+            else
+            {
+                SnowStretch = ScalarMath.ClampedMap(StarEase, 0.25f, 1f) * 50f;
+                SnowSpeedAddition = (0f - SnowStretch) * 4f;
+            }
+
+            starfog.Rotate((0f - EngineContext.DeltaTime) * 0.01f);
+            fog.Rotate((0f - EngineContext.DeltaTime) * 0.01f);
+            fog.TopColor = (fog.BotColor = SourceColorInterpolation.Lerp(mountainStates[currState].FogColor,
+                mountainStates[nextState].FogColor, easeState, ScalarArithmetic));
+            fog2.Rotate((0f - EngineContext.DeltaTime) * 0.01f);
+            fog2.TopColor = (fog2.BotColor = PackedColor.White * 0.3f * NearFogAlpha);
+            starstream1.Rotate(EngineContext.DeltaTime * 0.01f);
+            starstream2.Rotate(EngineContext.DeltaTime * 0.02f);
+            birdTimer += EngineContext.DeltaTime;
+        }
+
+        public void ResetRenderTargets()
+        {
+            int num = Math.Min(1920, Metrics.ViewWidth);
+            int num2 = Math.Min(1080, Metrics.ViewHeight);
+            if (buffer == null || buffer.IsDisposed || (buffer.Width != num && !LockBufferResizing))
+            {
+                DisposeTargets();
+                buffer = ((ISourceVirtualContentEnvironment)EngineContext).VirtualContent.CreateRenderTarget(
+                    "mountain-a",
+                    num, num2, depth: true, preserve: false);
+                blurA = ((ISourceVirtualContentEnvironment)EngineContext).VirtualContent.CreateRenderTarget(
+                    "mountain-blur-a", num / 2, num2 / 2);
+                blurB = ((ISourceVirtualContentEnvironment)EngineContext).VirtualContent.CreateRenderTarget(
+                    "mountain-blur-b", num / 2, num2 / 2);
+            }
+        }
+
+        public virtual void ResetBillboardBuffers()
+        {
+            if (billboardVertices == null || billboardIndices.IsDisposed ||
+                billboardIndices.GraphicsDevice.IsDisposed ||
+                billboardVertices.IsDisposed || billboardVertices.GraphicsDevice.IsDisposed ||
+                billboardInfo.Length > billboardVertices.VertexCount)
+            {
+                DisposeBillboardBuffers();
+                billboardVertices = new SourceVertexBuffer(Device, typeof(SourceVertexPositionColorTexture),
+                    billboardInfo.Length, SourceBufferUsage.None);
+                billboardIndices = new SourceIndexBuffer(Device, typeof(short), billboardInfo.Length / 4 * 6,
+                    SourceBufferUsage.None);
+                short[] array = new short[billboardIndices.IndexCount];
+                int num = 0;
+                int num2 = 0;
+                while (num < array.Length)
+                {
+                    array[num] = (short)num2;
+                    array[num + 1] = (short)(num2 + 1);
+                    array[num + 2] = (short)(num2 + 2);
+                    array[num + 3] = (short)num2;
+                    array[num + 4] = (short)(num2 + 2);
+                    array[num + 5] = (short)(num2 + 3);
+                    num += 6;
+                    num2 += 4;
+                }
+
+                billboardIndices.SetData(array);
+            }
+        }
+
+        public void Dispose()
+        {
+            DisposeTargets();
+            DisposeBillboardBuffers();
+        }
+
+        public void DisposeTargets()
+        {
+            if (buffer != null && !buffer.IsDisposed)
+            {
+                buffer.Dispose();
+                blurA.Dispose();
+                blurB.Dispose();
+            }
+        }
+
+        public virtual void DisposeBillboardBuffers()
+        {
+            if (billboardVertices != null && !billboardVertices.IsDisposed)
+            {
+                billboardVertices.Dispose();
+            }
+
+            if (billboardIndices != null && !billboardIndices.IsDisposed)
+            {
+                billboardIndices.Dispose();
+            }
+        }
+
+        public virtual void BeforeRender(object scene)
+        {
+            ResetRenderTargets();
+            Quaternion rotation = Camera.Rotation;
+            if (ignoreCameraRotation)
+            {
+                rotation = lastCameraRotation;
+            }
+
+            Matrix4x4 matrix = SourceMatrixMath.CreatePerspectiveFieldOfView((float)Math.PI / 4f,
+                (float)Metrics.Width / (float)Metrics.Height, 0.25f, 50f);
+            Matrix4x4 matrix2 = SourceMatrixMath.Multiply(SourceMatrixMath.CreateTranslation(-Camera.Position),
+                SourceMatrixMath.CreateFromQuaternion(rotation));
+            Matrix4x4 matrix3 = SourceMatrixMath.Multiply(matrix2, matrix);
+            Forward = SourceVector3Math.Transform(new Vector3(0f, 0f, -1f),
+                SourceQuaternionMath.Conjugate(Camera.Rotation));
+            Device.SetRenderTarget((SourceRenderTarget2DResource)buffer.Target);
+            if (StarEase < 1f)
+            {
+                Matrix4x4 matrix4 = SourceMatrixMath.Multiply(
+                    SourceMatrixMath.Multiply(SourceMatrixMath.CreateTranslation(0f, 5f - Camera.Position.Y * 1.1f, 0f),
+                        SourceMatrixMath.CreateFromQuaternion(rotation)), matrix);
+                if (currState == nextState)
+                {
+                    mountainStates[currState].Skybox.Draw(matrix4, PackedColor.White);
+                }
+                else
+                {
+                    mountainStates[currState].Skybox.Draw(matrix4, PackedColor.White);
+                    mountainStates[nextState].Skybox.Draw(matrix4, PackedColor.White * easeState);
+                }
+
+                if (currState != nextState)
+                {
+                    GraphicsResources.FxMountain.Parameters["ease"].SetValue(easeState);
+                    GraphicsResources.FxMountain.CurrentTechnique = GraphicsResources.FxMountain.Techniques["Easing"];
+                }
+                else
+                {
+                    GraphicsResources.FxMountain.CurrentTechnique = GraphicsResources.FxMountain.Techniques["Single"];
+                }
+
+                Device.DepthStencilState = SourceDepthStencilState.Default;
+                Device.BlendState = SourceBlendState.AlphaBlend;
+                Device.RasterizerState = MountainRasterizer;
+                GraphicsResources.FxMountain.Parameters["WorldViewProj"].SetValue(matrix3);
+                GraphicsResources.FxMountain.Parameters["fog"].SetValue(fog.TopColor.ToVector3());
+                Device.Textures[0] = (SourceTexture2DResource)(mountainStates[currState].TerrainTexture.Texture);
+                Device.SamplerStates[0] = SourceSamplerState.LinearClamp;
+                if (currState != nextState)
+                {
+                    Device.Textures[1] = (SourceTexture2DResource)(mountainStates[nextState].TerrainTexture.Texture);
+                    Device.SamplerStates[1] = SourceSamplerState.LinearClamp;
+                }
+
+                MountainResources.MountainTerrain.Draw(GraphicsResources.FxMountain);
+                GraphicsResources.FxMountain.Parameters["WorldViewProj"]
+                    .SetValue(SourceMatrixMath.Multiply(SourceMatrixMath.CreateTranslation(CoreWallPosition), matrix3));
+                MountainResources.MountainCoreWall.Draw(GraphicsResources.FxMountain);
+                GraphicsResources.FxMountain.Parameters["WorldViewProj"].SetValue(matrix3);
+                Device.Textures[0] = (SourceTexture2DResource)(mountainStates[currState].BuildingsTexture.Texture);
+                Device.SamplerStates[0] = SourceSamplerState.LinearClamp;
+                if (currState != nextState)
+                {
+                    Device.Textures[1] = (SourceTexture2DResource)(mountainStates[nextState].BuildingsTexture.Texture);
+                    Device.SamplerStates[1] = SourceSamplerState.LinearClamp;
+                }
+
+                MountainResources.MountainBuildings.Draw(GraphicsResources.FxMountain);
+                fog.Draw(matrix3);
+            }
+
+            if (StarEase > 0f)
+            {
+                Context.BeginBatch(new SourceRenderBatchState(SourceSpriteSortMode.Deferred,
+                    SourceBlendState.AlphaBlend,
+                    SourceSamplerState.LinearClamp, null, null, null, Matrix4x4.Identity));
+                global::Celeste.Graphics.Rendering.SourcePrimitiveDrawing.Rect(Context, this, 0f, 0f, buffer.Width,
+                    buffer.Height,
+                    PackedColor.Black * EasingArithmetic.CubeInOut(ScalarMath.ClampedMap(StarEase, 0f, 0.6f)));
+                Context.EndBatch();
+                Matrix4x4 matrix5 = SourceMatrixMath.Multiply(
+                    SourceMatrixMath.Multiply(SourceMatrixMath.CreateTranslation(starCenter - Camera.Position),
+                        SourceMatrixMath.CreateFromQuaternion(rotation)), matrix);
+                float alpha = ScalarMath.ClampedMap(StarEase, 0.8f, 1f);
+                starsky.Draw(matrix5, CullCCRasterizer, alpha);
+                starfog.Draw(matrix5, CullCCRasterizer, alpha);
+                stardots0.Draw(matrix5, CullCCRasterizer, alpha);
+                starstream0.Draw(matrix5, CullCCRasterizer, alpha);
+                starstream1.Draw(matrix5, CullCCRasterizer, alpha);
+                starstream2.Draw(matrix5, CullCCRasterizer, alpha);
+                Device.DepthStencilState = SourceDepthStencilState.Default;
+                Device.BlendState = SourceBlendState.AlphaBlend;
+                Device.RasterizerState = CullCRasterizer;
+                Device.Textures[0] = (SourceTexture2DResource)(MountainResources.MountainMoonTexture.Texture);
+                Device.SamplerStates[0] = SourceSamplerState.LinearClamp;
+                GraphicsResources.FxMountain.CurrentTechnique = GraphicsResources.FxMountain.Techniques["Single"];
+                GraphicsResources.FxMountain.Parameters["WorldViewProj"].SetValue(matrix3);
+                GraphicsResources.FxMountain.Parameters["fog"].SetValue(fog.TopColor.ToVector3());
+                MountainResources.MountainMoon.Draw(GraphicsResources.FxMountain);
+                float num = birdTimer * 0.2f;
+                Matrix4x4 matrix6 = SourceMatrixMath.Multiply(
+                    SourceMatrixMath.Multiply(
+                        SourceMatrixMath.Multiply(
+                            SourceMatrixMath.Multiply(SourceMatrixMath.CreateScale(0.25f),
+                                SourceMatrixMath.CreateRotationZ((float)Math.Cos(num * 2f) * 0.5f)),
+                            SourceMatrixMath.CreateRotationX(0.4f + (float)Math.Sin(num) * 0.05f)),
+                        SourceMatrixMath.CreateRotationY(0f - num - (float)Math.PI / 2f)),
+                    SourceMatrixMath.CreateTranslation((float)Math.Cos(num) * 2.2f,
+                        31f + (float)Math.Sin(num * 2f) * 0.8f,
+                        (float)Math.Sin(num) * 2.2f));
+                GraphicsResources.FxMountain.Parameters["WorldViewProj"]
+                    .SetValue(SourceMatrixMath.Multiply(matrix6, matrix3));
+                GraphicsResources.FxMountain.Parameters["fog"].SetValue(fog.TopColor.ToVector3());
+                MountainResources.MountainBird.Draw(GraphicsResources.FxMountain);
+            }
+
+            DrawBillboards(matrix3,
+                ((SourceSceneState)scene).SourceScene.Components.GetTrackedComponents("Celeste.Billboard"));
+            if (StarEase < 1f)
+            {
+                fog2.Draw(matrix3, CullCRasterizer);
+            }
+
+            if (DrawDebugPoints && DebugPoints.Count > 0)
+            {
+                GraphicsResources.FxDebug.World = Matrix4x4.Identity;
+                GraphicsResources.FxDebug.View = matrix2;
+                GraphicsResources.FxDebug.Projection = matrix;
+                GraphicsResources.FxDebug.TextureEnabled = false;
+                GraphicsResources.FxDebug.VertexColorEnabled = true;
+                SourceVertexPositionColor[] array = DebugPoints.ToArray();
+                foreach (SourceEffectPass pass in GraphicsResources.FxDebug.CurrentTechnique.Passes)
+                {
+                    pass.Apply();
+                    Device.DrawUserPrimitives(SourcePrimitiveType.TriangleList, array, 0, array.Length / 3);
+                }
+            }
+
+            GaussianBlurPresentation.Blur((ISourceGaussianBlurEnvironment)EngineContext,
+                (SourceTexture2DResource)buffer.Target, blurA, blurB, 0.75f, clear: true, GaussianBlurSamples.Five);
+        }
+
+        protected void DrawBillboards(Matrix4x4 matrix, List<SourceComponentState> billboards)
+        {
+            int num = 0;
+            int num2 = billboardInfo.Length / 4;
+            Vector3 vector = SourceVector3Math.Transform(new Vector3(-1f, 0f, 0f),
+                SourceQuaternionMath.Conjugate(SourceQuaternionMath.LookAt(Vector3.Zero, Forward, Vector3.UnitY,
+                    VectorArithmetic)));
+            Vector3 vector2 = SourceVector3Math.Transform(Vector3.UnitY,
+                SourceQuaternionMath.Conjugate(SourceQuaternionMath.LookAt(Vector3.Zero, Forward, Vector3.UnitY,
+                    VectorArithmetic)));
+            foreach (BillboardState billboard in billboards)
+            {
+                if (!((ISourceEntityVisibility)billboard.Entity).Visible || !billboard.Visible)
+                {
+                    continue;
+                }
+
+                if (billboard.BeforeRender != null)
+                {
+                    billboard.BeforeRender();
+                }
+
+                if (billboard.Color.A >= 0 && billboard.Size.X != 0f && billboard.Size.Y != 0f &&
+                    billboard.Scale.X != 0f &&
+                    billboard.Scale.Y != 0f && billboard.Texture != null)
+                {
+                    if (num < num2)
+                    {
+                        Vector3 position = billboard.Position;
+                        Vector3 vector3 = vector * billboard.Size.X * billboard.Scale.X;
+                        Vector3 vector4 = vector2 * billboard.Size.Y * billboard.Scale.Y;
+                        Vector3 vector5 = -vector3;
+                        Vector3 vector6 = -vector4;
+                        int num3 = num * 4;
+                        int num4 = num * 4 + 1;
+                        int num5 = num * 4 + 2;
+                        int num6 = num * 4 + 3;
+                        billboardInfo[num3].Color = billboard.Color;
+                        billboardInfo[num3].TextureCoordinate.X = billboard.Texture.LeftUV;
+                        billboardInfo[num3].TextureCoordinate.Y = billboard.Texture.BottomUV;
+                        billboardInfo[num3].Position = position + vector3 + vector6;
+                        billboardInfo[num4].Color = billboard.Color;
+                        billboardInfo[num4].TextureCoordinate.X = billboard.Texture.LeftUV;
+                        billboardInfo[num4].TextureCoordinate.Y = billboard.Texture.TopUV;
+                        billboardInfo[num4].Position = position + vector3 + vector4;
+                        billboardInfo[num5].Color = billboard.Color;
+                        billboardInfo[num5].TextureCoordinate.X = billboard.Texture.RightUV;
+                        billboardInfo[num5].TextureCoordinate.Y = billboard.Texture.TopUV;
+                        billboardInfo[num5].Position = position + vector5 + vector4;
+                        billboardInfo[num6].Color = billboard.Color;
+                        billboardInfo[num6].TextureCoordinate.X = billboard.Texture.RightUV;
+                        billboardInfo[num6].TextureCoordinate.Y = billboard.Texture.BottomUV;
+                        billboardInfo[num6].Position = position + vector5 + vector6;
+                        billboardTextures[num] = (SourceTexture2DResource)billboard.Texture.Texture.TextureSafe;
+                    }
+
+                    num++;
+                }
+            }
+
+            ResetBillboardBuffers();
+            if (num <= 0)
+            {
+                return;
+            }
+
+            billboardVertices.SetData(billboardInfo);
+            Device.SetVertexBuffer(billboardVertices);
+            Device.Indices = billboardIndices;
+            Device.RasterizerState = CullNoneRasterizer;
+            Device.SamplerStates[0] = SourceSamplerState.LinearClamp;
+            Device.BlendState = SourceBlendState.AlphaBlend;
+            Device.DepthStencilState = SourceDepthStencilState.DepthRead;
+            GraphicsResources.FxTexture.Parameters["World"].SetValue(matrix);
+            int num7 = Math.Min(num, billboardInfo.Length / 4);
+            SourceTexture2DResource texture2D = billboardTextures[0];
+            int num8 = 0;
+            for (int i = 1; i < num7; i++)
+            {
+                if (billboardTextures[i] != texture2D)
+                {
+                    DrawBillboardBatch(texture2D, num8, i - num8);
+                    texture2D = billboardTextures[i];
+                    num8 = i;
+                }
+            }
+
+            DrawBillboardBatch(texture2D, num8, num7 - num8);
+            if (num * 4 > billboardInfo.Length)
+            {
+                billboardInfo = new SourceVertexPositionColorTexture[billboardInfo.Length * 2];
+                billboardTextures = new SourceTexture2DResource[billboardInfo.Length / 4];
+            }
+        }
+
+        private void DrawBillboardBatch(SourceTexture2DResource texture, int offset, int sprites)
+        {
+            Device.Textures[0] = (SourceTexture2DResource)(texture);
+            foreach (SourceEffectPass pass in GraphicsResources.FxTexture.CurrentTechnique.Passes)
+            {
+                pass.Apply();
+                Device.DrawIndexedPrimitives(SourcePrimitiveType.TriangleList, offset * 4, 0, sprites * 4, 0,
+                    sprites * 2);
+            }
+        }
+
+        public void Render()
+        {
+            float num = (float)Metrics.ViewWidth / (float)buffer.Width;
+            Context.BeginBatch(new SourceRenderBatchState(SourceSpriteSortMode.Deferred, SourceBlendState.AlphaBlend,
+                SourceSamplerState.LinearClamp, null, null, null, Matrix4x4.Identity));
+            ((ISourceRenderCommandSink<RenderTargetTextureDraw>)Context).Draw(
+                new RenderTargetTextureDraw((SourceTexture2DResource)buffer.Target, Vector2.Zero, buffer.Bounds,
+                    Vector2.Zero, PackedColor.White * 1f, Vector2.One * num), this);
+            ((ISourceRenderCommandSink<RenderTargetTextureDraw>)Context).Draw(
+                new RenderTargetTextureDraw((SourceTexture2DResource)blurB.Target, Vector2.Zero, blurB.Bounds,
+                    Vector2.Zero,
+                    PackedColor.White, Vector2.One * (num * 2f)), this);
+            Context.EndBatch();
+        }
+    }
+}

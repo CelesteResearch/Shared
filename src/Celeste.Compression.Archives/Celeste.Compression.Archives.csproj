@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>14.0</LangVersion>
+        <Nullable>annotations</Nullable>
+        <AssemblyName>Celeste.Compression.Archives</AssemblyName>
+        <RootNamespace>ICSharpCode.SharpZipLib</RootNamespace>
+        <Version>1.4.2</Version>
+        <AssemblyVersion>1.4.2.13</AssemblyVersion>
+        <FileVersion>1.4.2.13</FileVersion>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+</Project>

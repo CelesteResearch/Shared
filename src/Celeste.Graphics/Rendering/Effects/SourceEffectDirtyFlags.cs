@@ -1,0 +1,20 @@
+using System;
+using System.Numerics;
+using Celeste.Core.Mathematics.LinearAlgebra;
+
+namespace Celeste.Graphics.Rendering.Effects
+{
+    [Flags]
+    internal enum SourceEffectDirtyFlags
+    {
+        WorldViewProj = 1,
+        World = 2,
+        EyePosition = 4,
+        MaterialColor = 8,
+        Fog = 0x10,
+        FogEnable = 0x20,
+        AlphaTest = 0x40,
+        ShaderIndex = 0x80,
+        All = -1
+    }
+}

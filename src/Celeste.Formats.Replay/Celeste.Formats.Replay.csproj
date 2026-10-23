@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>12.0</LangVersion>
+        <AssemblyName>Celeste.Formats.Replay</AssemblyName>
+        <RootNamespace>Celeste.Formats.Replay</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Graphics/Celeste.Graphics.csproj" />
+    </ItemGroup>
+</Project>

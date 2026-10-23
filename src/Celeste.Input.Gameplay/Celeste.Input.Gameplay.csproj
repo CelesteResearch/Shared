@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>12.0</LangVersion>
+        <AssemblyName>Celeste.Input.Gameplay</AssemblyName>
+        <RootNamespace>Celeste.Input.Gameplay</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Input/Celeste.Input.csproj" />
+        <ProjectReference Include="../Celeste.Core/Celeste.Core.csproj" />
+    </ItemGroup>
+</Project>

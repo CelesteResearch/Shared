@@ -1,0 +1,7 @@
+namespace FFmpeg
+{
+    public struct IDirect3DSurface9
+    {
+        public unsafe IDirect3DSurface9Vtbl* lpVtbl;
+    }
+}

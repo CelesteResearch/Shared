@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>12.0</LangVersion>
+        <AssemblyName>Celeste.Simulation</AssemblyName>
+        <RootNamespace>Celeste.Simulation</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Scene/Celeste.Scene.csproj" />
+        <ProjectReference Include="../Celeste.Localization/Celeste.Localization.csproj" />
+        <ProjectReference Include="../Celeste.Core/Celeste.Core.csproj" />
+        <ProjectReference Include="../Celeste.Input.Gameplay/Celeste.Input.Gameplay.csproj" />
+        <ProjectReference Include="../Celeste.Physics/Celeste.Physics.csproj" />
+        <ProjectReference Include="../Celeste.Graphics/Celeste.Graphics.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Input/Celeste.Input.csproj" />
+    </ItemGroup>
+</Project>

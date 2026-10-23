@@ -1,0 +1,563 @@
+{
+  "Source": "https://github.com/icsharpcode/SharpZipLib/tree/v1.4.2",
+  "SourceArchiveSHA256": "137c28f3c37d2a551e1dd2f460086eb4bf380b323a7a8487604c7b1c1b757f48",
+  "License": "MIT",
+  "AssemblyIdentity": "Celeste.Compression.Archives, Version=1.4.2.13, Culture=neutral, PublicKeyToken=null",
+  "OriginalSourceBytesUnchanged": true,
+  "OriginalProjectChange": "Single netstandard2.1 target; distinct real assembly name; no signing/packaging/build analyzers; donor version retained; all original namespace families retained.",
+  "Files": [
+    {
+      "OriginalPath": "AssemblyInfo.cs",
+      "OriginalSHA256": "0a854aa9fff0314891ee9142e0ab22401649331742d742a3af2f5c36b3c81914",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/AssemblyInfo.cs",
+      "AfterSHA256": "0a854aa9fff0314891ee9142e0ab22401649331742d742a3af2f5c36b3c81914",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "BZip2/BZip2.cs",
+      "OriginalSHA256": "e7f4e9043c646a7ecbb1b99a7665540b8ade2e89f7a23ae925893e968604f30c",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/BZip2/BZip2.cs",
+      "AfterSHA256": "e7f4e9043c646a7ecbb1b99a7665540b8ade2e89f7a23ae925893e968604f30c",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "BZip2/BZip2Constants.cs",
+      "OriginalSHA256": "ebd1e0a78f63289281be4e3f3a78b62fb23e73b76bd960165465f25108180a2b",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/BZip2/BZip2Constants.cs",
+      "AfterSHA256": "ebd1e0a78f63289281be4e3f3a78b62fb23e73b76bd960165465f25108180a2b",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "BZip2/BZip2Exception.cs",
+      "OriginalSHA256": "8343ff7ca12131525bc5180d3304436d253518d62937613dd22e1ee1d69f799f",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/BZip2/BZip2Exception.cs",
+      "AfterSHA256": "8343ff7ca12131525bc5180d3304436d253518d62937613dd22e1ee1d69f799f",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "BZip2/BZip2InputStream.cs",
+      "OriginalSHA256": "0928a144a7ab3a6e82032924c755f5ec81696bd9272a03d77d678f7cef9c5a43",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/BZip2/BZip2InputStream.cs",
+      "AfterSHA256": "0928a144a7ab3a6e82032924c755f5ec81696bd9272a03d77d678f7cef9c5a43",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "BZip2/BZip2OutputStream.cs",
+      "OriginalSHA256": "d3b16dd5fe53894b5f14bd049d38c581e3d49d9d5362a0cd4f6995b864921435",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/BZip2/BZip2OutputStream.cs",
+      "AfterSHA256": "d3b16dd5fe53894b5f14bd049d38c581e3d49d9d5362a0cd4f6995b864921435",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Checksum/Adler32.cs",
+      "OriginalSHA256": "659c93673e5d13e1f17db211b5dad1b953f16b3c4552df465ad2e7b290bf4ccc",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Checksum/Adler32.cs",
+      "AfterSHA256": "659c93673e5d13e1f17db211b5dad1b953f16b3c4552df465ad2e7b290bf4ccc",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Checksum/BZip2Crc.cs",
+      "OriginalSHA256": "f443ae2a2c61c14fb822349101e2fd4dd022c964c1164e92d2acf36efff518e9",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Checksum/BZip2Crc.cs",
+      "AfterSHA256": "f443ae2a2c61c14fb822349101e2fd4dd022c964c1164e92d2acf36efff518e9",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Checksum/Crc32.cs",
+      "OriginalSHA256": "e6232ddacfae775c68fb21ca0819cfe8e4d09f86b26a0266a6ee166aa3da2ecf",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Checksum/Crc32.cs",
+      "AfterSHA256": "e6232ddacfae775c68fb21ca0819cfe8e4d09f86b26a0266a6ee166aa3da2ecf",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Checksum/CrcUtilities.cs",
+      "OriginalSHA256": "b2702630c60632fbfa9f60a565fec79abbac60beb5d619c903ceaabeb593e841",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Checksum/CrcUtilities.cs",
+      "AfterSHA256": "b2702630c60632fbfa9f60a565fec79abbac60beb5d619c903ceaabeb593e841",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Checksum/IChecksum.cs",
+      "OriginalSHA256": "32b3d05de60dcf3764142885206200b258be847ca4fd488e32e6dfe068d9270b",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Checksum/IChecksum.cs",
+      "AfterSHA256": "32b3d05de60dcf3764142885206200b258be847ca4fd488e32e6dfe068d9270b",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/ByteOrderUtils.cs",
+      "OriginalSHA256": "96027c5332ffa8f37cb5b3cb6d3958ac69f536eb822e03bddcc4e3d3388c78cb",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/ByteOrderUtils.cs",
+      "AfterSHA256": "96027c5332ffa8f37cb5b3cb6d3958ac69f536eb822e03bddcc4e3d3388c78cb",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/EmptyRefs.cs",
+      "OriginalSHA256": "a8f9b91b0fe5e79831abfe9aa82f8e4461bbc42f21cb3e131eafb8afc081b597",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/EmptyRefs.cs",
+      "AfterSHA256": "a8f9b91b0fe5e79831abfe9aa82f8e4461bbc42f21cb3e131eafb8afc081b597",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/ExactMemoryPool.cs",
+      "OriginalSHA256": "3d3ae5dba9f039b8390dd1134fd0116c7c4cf12a2f892de6df5530a7991da99b",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/ExactMemoryPool.cs",
+      "AfterSHA256": "3d3ae5dba9f039b8390dd1134fd0116c7c4cf12a2f892de6df5530a7991da99b",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/Exceptions/SharpZipBaseException.cs",
+      "OriginalSHA256": "1824f4fb34890a1cb4a8c292f78a910cf8199ab6aa3bdf850aed9292a119a38e",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/Exceptions/SharpZipBaseException.cs",
+      "AfterSHA256": "1824f4fb34890a1cb4a8c292f78a910cf8199ab6aa3bdf850aed9292a119a38e",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/Exceptions/StreamDecodingException.cs",
+      "OriginalSHA256": "8f62c5cfd77d9ed6295f362ad950f71b94d501285fd83fa5b3a581d1403f6f46",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/Exceptions/StreamDecodingException.cs",
+      "AfterSHA256": "8f62c5cfd77d9ed6295f362ad950f71b94d501285fd83fa5b3a581d1403f6f46",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/Exceptions/StreamUnsupportedException.cs",
+      "OriginalSHA256": "fc632022e5c44c7524a8cc900e77938373c161d15b094832c28c99edf1ac77fa",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/Exceptions/StreamUnsupportedException.cs",
+      "AfterSHA256": "fc632022e5c44c7524a8cc900e77938373c161d15b094832c28c99edf1ac77fa",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/Exceptions/UnexpectedEndOfStreamException.cs",
+      "OriginalSHA256": "fa3c4aa88f887ea66b2c2f47228b56f8440862913da9f5de17f424ff7d7d7b47",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/Exceptions/UnexpectedEndOfStreamException.cs",
+      "AfterSHA256": "fa3c4aa88f887ea66b2c2f47228b56f8440862913da9f5de17f424ff7d7d7b47",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/Exceptions/ValueOutOfRangeException.cs",
+      "OriginalSHA256": "ba3938db192c344ca9a383969ee856de254306c195fbd46ec4a2526b01964384",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/Exceptions/ValueOutOfRangeException.cs",
+      "AfterSHA256": "ba3938db192c344ca9a383969ee856de254306c195fbd46ec4a2526b01964384",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/FileSystemScanner.cs",
+      "OriginalSHA256": "d0fac3f42ee16dd816419f713b1d22d9e8db6fc2ec4bd651c59bbe394857ee21",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/FileSystemScanner.cs",
+      "AfterSHA256": "d0fac3f42ee16dd816419f713b1d22d9e8db6fc2ec4bd651c59bbe394857ee21",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/INameTransform.cs",
+      "OriginalSHA256": "347399ad3060b3fc71c1eb77e6fed80262254eae4ca4055a4d2bf518066acfa3",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/INameTransform.cs",
+      "AfterSHA256": "347399ad3060b3fc71c1eb77e6fed80262254eae4ca4055a4d2bf518066acfa3",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/InvalidNameException.cs",
+      "OriginalSHA256": "4c28ab4c3a023b146c09beb54ddc3b289d543b3e142dec482dc8db7127e4c4dd",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/InvalidNameException.cs",
+      "AfterSHA256": "4c28ab4c3a023b146c09beb54ddc3b289d543b3e142dec482dc8db7127e4c4dd",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/IScanFilter.cs",
+      "OriginalSHA256": "2c5c97d6c893b49863bc835d91a2e8365394fc87d78b169b1d09229d3c1cb6ce",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/IScanFilter.cs",
+      "AfterSHA256": "2c5c97d6c893b49863bc835d91a2e8365394fc87d78b169b1d09229d3c1cb6ce",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/NameFilter.cs",
+      "OriginalSHA256": "889ac0e835219127c62be71143e7677b4fdde60b8ee2f8383a3216509a09ef93",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/NameFilter.cs",
+      "AfterSHA256": "889ac0e835219127c62be71143e7677b4fdde60b8ee2f8383a3216509a09ef93",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/PathFilter.cs",
+      "OriginalSHA256": "dffd1f2256db3d23d67468bf779890647ed621dbe500f4a0259de08fc78a8327",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/PathFilter.cs",
+      "AfterSHA256": "dffd1f2256db3d23d67468bf779890647ed621dbe500f4a0259de08fc78a8327",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/PathUtils.cs",
+      "OriginalSHA256": "caa45e9f93c1770f0b9295693334fc7dfade6c8d5efca48fcc092a0073c76f87",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/PathUtils.cs",
+      "AfterSHA256": "caa45e9f93c1770f0b9295693334fc7dfade6c8d5efca48fcc092a0073c76f87",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/StreamUtils.cs",
+      "OriginalSHA256": "d563398350e4c3deafa6a669ae87a01b3ad9c1f888545c64adb57c72f6aaced7",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/StreamUtils.cs",
+      "AfterSHA256": "d563398350e4c3deafa6a669ae87a01b3ad9c1f888545c64adb57c72f6aaced7",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Core/StringBuilderPool.cs",
+      "OriginalSHA256": "2c490d4915f4663632806ef50d95ef997339b2fdf428b2ed3865ac679031b384",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Core/StringBuilderPool.cs",
+      "AfterSHA256": "2c490d4915f4663632806ef50d95ef997339b2fdf428b2ed3865ac679031b384",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Encryption/PkzipClassic.cs",
+      "OriginalSHA256": "aefa10eb5863ca10e1aad98b646a45a01def6ab262e98185fb8955008edc304a",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Encryption/PkzipClassic.cs",
+      "AfterSHA256": "aefa10eb5863ca10e1aad98b646a45a01def6ab262e98185fb8955008edc304a",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Encryption/ZipAESStream.cs",
+      "OriginalSHA256": "54939a321a9a211e6620c2296491d75fc0bc98be9d7dae89cec1d52cad79644c",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Encryption/ZipAESStream.cs",
+      "AfterSHA256": "54939a321a9a211e6620c2296491d75fc0bc98be9d7dae89cec1d52cad79644c",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Encryption/ZipAESTransform.cs",
+      "OriginalSHA256": "4f84c0d69e86ba394d2a80b0599268ede9bbaa8b0ff374520b9ec3269f80a9f6",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Encryption/ZipAESTransform.cs",
+      "AfterSHA256": "4f84c0d69e86ba394d2a80b0599268ede9bbaa8b0ff374520b9ec3269f80a9f6",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "GZip/GZip.cs",
+      "OriginalSHA256": "0e687276b4751dd3ab29085d258a3ddaf2302c2bf634b914d724ca14c1a29136",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/GZip/GZip.cs",
+      "AfterSHA256": "0e687276b4751dd3ab29085d258a3ddaf2302c2bf634b914d724ca14c1a29136",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "GZip/GZipConstants.cs",
+      "OriginalSHA256": "7dd78d37675ff2732ea025bcc5b3c6989124ef21cf2685cbafa1581888aeaf44",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/GZip/GZipConstants.cs",
+      "AfterSHA256": "7dd78d37675ff2732ea025bcc5b3c6989124ef21cf2685cbafa1581888aeaf44",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "GZip/GZipException.cs",
+      "OriginalSHA256": "4439b3a4761f0ebfb96c0e343e6537855b06c09961d61c8565a5f649267d3ee8",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/GZip/GZipException.cs",
+      "AfterSHA256": "4439b3a4761f0ebfb96c0e343e6537855b06c09961d61c8565a5f649267d3ee8",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "GZip/GzipInputStream.cs",
+      "OriginalSHA256": "99815e8a96a1f88c2d3120997f53ef8cd8a2ce59e40d3c410b4a53c2cca3e04e",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/GZip/GzipInputStream.cs",
+      "AfterSHA256": "99815e8a96a1f88c2d3120997f53ef8cd8a2ce59e40d3c410b4a53c2cca3e04e",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "GZip/GzipOutputStream.cs",
+      "OriginalSHA256": "c711462fba30380618eb2d2f59a0404b2e71cf5c19efa6592635ba17b14b55ad",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/GZip/GzipOutputStream.cs",
+      "AfterSHA256": "c711462fba30380618eb2d2f59a0404b2e71cf5c19efa6592635ba17b14b55ad",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Lzw/LzwConstants.cs",
+      "OriginalSHA256": "e63f321d7772445254bc2d15f1b758faaeba553c11c428a0adc061fe7b0cfce8",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Lzw/LzwConstants.cs",
+      "AfterSHA256": "e63f321d7772445254bc2d15f1b758faaeba553c11c428a0adc061fe7b0cfce8",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Lzw/LzwException.cs",
+      "OriginalSHA256": "032c87fcc0c25f47e014f5e6eacaa61c0eead5143f60cb73929a5d1e5fb7d6b3",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Lzw/LzwException.cs",
+      "AfterSHA256": "032c87fcc0c25f47e014f5e6eacaa61c0eead5143f60cb73929a5d1e5fb7d6b3",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Lzw/LzwInputStream.cs",
+      "OriginalSHA256": "b5402be61ce361963917828e1b87e330e1e1586a5460cd851a8702f78d12e33c",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Lzw/LzwInputStream.cs",
+      "AfterSHA256": "b5402be61ce361963917828e1b87e330e1e1586a5460cd851a8702f78d12e33c",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Tar/InvalidHeaderException.cs",
+      "OriginalSHA256": "6d5fca610dc60ec8b5dbb6ce0a3a45baa1600d5e18117b3fa68d2bcb907ca6be",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Tar/InvalidHeaderException.cs",
+      "AfterSHA256": "6d5fca610dc60ec8b5dbb6ce0a3a45baa1600d5e18117b3fa68d2bcb907ca6be",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Tar/TarArchive.cs",
+      "OriginalSHA256": "05dac4ee946b326d20b7bf4e683bff38ec5e76400fff2540b43213b3c9f5013b",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Tar/TarArchive.cs",
+      "AfterSHA256": "05dac4ee946b326d20b7bf4e683bff38ec5e76400fff2540b43213b3c9f5013b",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Tar/TarBuffer.cs",
+      "OriginalSHA256": "321d6ee51b141920d3bc9a210be4fdcb6ca25c281ff3691de6c9f9066a034040",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Tar/TarBuffer.cs",
+      "AfterSHA256": "321d6ee51b141920d3bc9a210be4fdcb6ca25c281ff3691de6c9f9066a034040",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Tar/TarEntry.cs",
+      "OriginalSHA256": "9af0cffc10fcedbd636c580531e95c82568db8349db905a169660489543534f2",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Tar/TarEntry.cs",
+      "AfterSHA256": "9af0cffc10fcedbd636c580531e95c82568db8349db905a169660489543534f2",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Tar/TarException.cs",
+      "OriginalSHA256": "141e3df6dd4d547ba12320942136507faf29b90c595ee4a3da1d526cca714bcd",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Tar/TarException.cs",
+      "AfterSHA256": "141e3df6dd4d547ba12320942136507faf29b90c595ee4a3da1d526cca714bcd",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Tar/TarExtendedHeaderReader.cs",
+      "OriginalSHA256": "3029edca8f04d1e90c0e81e71583a9bdb7ddd4dccff980812d91c5fe97bc8e43",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Tar/TarExtendedHeaderReader.cs",
+      "AfterSHA256": "3029edca8f04d1e90c0e81e71583a9bdb7ddd4dccff980812d91c5fe97bc8e43",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Tar/TarHeader.cs",
+      "OriginalSHA256": "9bb0833abd2ecd1cbc15217d284e75a56dd715afc747a398ba579987e0f2c0e1",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Tar/TarHeader.cs",
+      "AfterSHA256": "9bb0833abd2ecd1cbc15217d284e75a56dd715afc747a398ba579987e0f2c0e1",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Tar/TarInputStream.cs",
+      "OriginalSHA256": "e9e4e2c3dad5ea29363e075f4b8dfa843ce81f8de9dc530ef760e4df8ff9428e",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Tar/TarInputStream.cs",
+      "AfterSHA256": "e9e4e2c3dad5ea29363e075f4b8dfa843ce81f8de9dc530ef760e4df8ff9428e",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Tar/TarOutputStream.cs",
+      "OriginalSHA256": "167be23d4e5ff6a5cbfce00ac05383b435935e8fc3f34cdffbd2c6cbd7d81243",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Tar/TarOutputStream.cs",
+      "AfterSHA256": "167be23d4e5ff6a5cbfce00ac05383b435935e8fc3f34cdffbd2c6cbd7d81243",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Tar/TarStringExtension.cs",
+      "OriginalSHA256": "4d87b12b2cc27e1ec45b609c6b23fa08c92d7f6b6b837ae5b6e77e3f6ec677d4",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Tar/TarStringExtension.cs",
+      "AfterSHA256": "4d87b12b2cc27e1ec45b609c6b23fa08c92d7f6b6b837ae5b6e77e3f6ec677d4",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/Deflater.cs",
+      "OriginalSHA256": "35f7e8dfc6534951279a18ffbe6f08bd60960ebb69414654de57fc306c6338c4",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/Deflater.cs",
+      "AfterSHA256": "35f7e8dfc6534951279a18ffbe6f08bd60960ebb69414654de57fc306c6338c4",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/DeflaterConstants.cs",
+      "OriginalSHA256": "99386bd2339eb6a45c9c11f1096a038d71f5fd403d8806f7d028711f5d78d983",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/DeflaterConstants.cs",
+      "AfterSHA256": "99386bd2339eb6a45c9c11f1096a038d71f5fd403d8806f7d028711f5d78d983",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/DeflaterEngine.cs",
+      "OriginalSHA256": "5fbff1bbb0668c50cc9cf78a6757e071eb2b932d395beb0538fad78f786a9e0b",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/DeflaterEngine.cs",
+      "AfterSHA256": "5fbff1bbb0668c50cc9cf78a6757e071eb2b932d395beb0538fad78f786a9e0b",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/DeflaterHuffman.cs",
+      "OriginalSHA256": "318219fbb9b6dd56b6443024b88c04fa1ed69eb9c952d2a69118559998f45d12",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/DeflaterHuffman.cs",
+      "AfterSHA256": "318219fbb9b6dd56b6443024b88c04fa1ed69eb9c952d2a69118559998f45d12",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/DeflaterPending.cs",
+      "OriginalSHA256": "a8815ccc4e203b32bf7a2785b6b1b6d204b4e0621ebfb5f8e3cb7d9f29c8e10a",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/DeflaterPending.cs",
+      "AfterSHA256": "a8815ccc4e203b32bf7a2785b6b1b6d204b4e0621ebfb5f8e3cb7d9f29c8e10a",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/Inflater.cs",
+      "OriginalSHA256": "03d71ba116df441a962ae11473af40725a0273f6bbec9e14073e84f88f517e44",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/Inflater.cs",
+      "AfterSHA256": "03d71ba116df441a962ae11473af40725a0273f6bbec9e14073e84f88f517e44",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/InflaterDynHeader.cs",
+      "OriginalSHA256": "6c0e651185f27f4e92d02fa74df2fd4c2fd4b7edcb49781089f9a11c7f808eb2",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/InflaterDynHeader.cs",
+      "AfterSHA256": "6c0e651185f27f4e92d02fa74df2fd4c2fd4b7edcb49781089f9a11c7f808eb2",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/InflaterHuffmanTree.cs",
+      "OriginalSHA256": "3529df0ca4eff9a43017e08d89f8295ce052d77086a9f29618e35da88dd522d7",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/InflaterHuffmanTree.cs",
+      "AfterSHA256": "3529df0ca4eff9a43017e08d89f8295ce052d77086a9f29618e35da88dd522d7",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/PendingBuffer.cs",
+      "OriginalSHA256": "1e3a8d5d1b81ddf24fe05a51644213b259c1dd9d0473f90804ae71fd28f7f5a1",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/PendingBuffer.cs",
+      "AfterSHA256": "1e3a8d5d1b81ddf24fe05a51644213b259c1dd9d0473f90804ae71fd28f7f5a1",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/Streams/DeflaterOutputStream.cs",
+      "OriginalSHA256": "0716809ccb85ddd355aa4d87decef4f322199d824a20602982368c1a3b648c63",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/Streams/DeflaterOutputStream.cs",
+      "AfterSHA256": "0716809ccb85ddd355aa4d87decef4f322199d824a20602982368c1a3b648c63",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/Streams/InflaterInputStream.cs",
+      "OriginalSHA256": "d5d9b01c88268e9c446955c62d2e622378ccbb7576b5e2e58031ea8cc53215a7",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/Streams/InflaterInputStream.cs",
+      "AfterSHA256": "d5d9b01c88268e9c446955c62d2e622378ccbb7576b5e2e58031ea8cc53215a7",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/Streams/OutputWindow.cs",
+      "OriginalSHA256": "88fce20b006a38a7e4b90a227c95988c46ada3d2ae96f6b53e917da9de52e856",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/Streams/OutputWindow.cs",
+      "AfterSHA256": "88fce20b006a38a7e4b90a227c95988c46ada3d2ae96f6b53e917da9de52e856",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/Compression/Streams/StreamManipulator.cs",
+      "OriginalSHA256": "5d6dbd9dee806e34a853ab8c6f68d6a1a2cb33148f28c1ad23857f960bd47e94",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/Compression/Streams/StreamManipulator.cs",
+      "AfterSHA256": "5d6dbd9dee806e34a853ab8c6f68d6a1a2cb33148f28c1ad23857f960bd47e94",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/FastZip.cs",
+      "OriginalSHA256": "920fafbc844c330364d76414c7480754ff8f0e6ff949eb93ced267d7b7e91a49",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/FastZip.cs",
+      "AfterSHA256": "920fafbc844c330364d76414c7480754ff8f0e6ff949eb93ced267d7b7e91a49",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/IEntryFactory.cs",
+      "OriginalSHA256": "8e71763a08398a185d51be33938d5702900f03eeebf5fd602f15dc1bc20341b7",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/IEntryFactory.cs",
+      "AfterSHA256": "8e71763a08398a185d51be33938d5702900f03eeebf5fd602f15dc1bc20341b7",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/WindowsNameTransform.cs",
+      "OriginalSHA256": "1824cb5de88a5e59de245b3b770d53e6089b0d182742ba36bd50ea1b4d6bd22f",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/WindowsNameTransform.cs",
+      "AfterSHA256": "1824cb5de88a5e59de245b3b770d53e6089b0d182742ba36bd50ea1b4d6bd22f",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipConstants.cs",
+      "OriginalSHA256": "b5b14b2be34954c66efff61c9786e7b0aa97dd966ef0cdbd4f2515fa13266ae5",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipConstants.cs",
+      "AfterSHA256": "b5b14b2be34954c66efff61c9786e7b0aa97dd966ef0cdbd4f2515fa13266ae5",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipEncryptionMethod.cs",
+      "OriginalSHA256": "3706e136ef95e72ef3bf6a95ac3593e8112468eedb185a54646f3184368c5892",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipEncryptionMethod.cs",
+      "AfterSHA256": "3706e136ef95e72ef3bf6a95ac3593e8112468eedb185a54646f3184368c5892",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipEntry.cs",
+      "OriginalSHA256": "7d7bb2abf77c57c3d21fbef10f51b8ac633cee701f5705f23fc836d9d023500f",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipEntry.cs",
+      "AfterSHA256": "7d7bb2abf77c57c3d21fbef10f51b8ac633cee701f5705f23fc836d9d023500f",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipEntryExtensions.cs",
+      "OriginalSHA256": "d295cb045ba64eb748bbad143149715b8d02123edb44c28fe4e78c59fa8b7472",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipEntryExtensions.cs",
+      "AfterSHA256": "d295cb045ba64eb748bbad143149715b8d02123edb44c28fe4e78c59fa8b7472",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipEntryFactory.cs",
+      "OriginalSHA256": "ed4c3c7fe866dfff9e0a5d3649ea376c1f8ac2abbc43e840ffddbdcdc6132774",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipEntryFactory.cs",
+      "AfterSHA256": "ed4c3c7fe866dfff9e0a5d3649ea376c1f8ac2abbc43e840ffddbdcdc6132774",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipException.cs",
+      "OriginalSHA256": "45c59f756a98ffd0cfd10a5a9caf336f565aa34d662b4d1a43d5d7171c4d4b43",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipException.cs",
+      "AfterSHA256": "45c59f756a98ffd0cfd10a5a9caf336f565aa34d662b4d1a43d5d7171c4d4b43",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipExtraData.cs",
+      "OriginalSHA256": "7f33d9b6fad578254b0c65e26e54d417a21cf99ab01fb01716b099cf8060bb21",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipExtraData.cs",
+      "AfterSHA256": "7f33d9b6fad578254b0c65e26e54d417a21cf99ab01fb01716b099cf8060bb21",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipFile.cs",
+      "OriginalSHA256": "d2804204259d1018f76ed0fd86ad7e73c0d4e890634b4371d245805df761f823",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipFile.cs",
+      "AfterSHA256": "d2804204259d1018f76ed0fd86ad7e73c0d4e890634b4371d245805df761f823",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipFormat.cs",
+      "OriginalSHA256": "8bac154a5deb77f0746c53acfea8ca43116c73e4fc257cd8d40582d2e064219e",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipFormat.cs",
+      "AfterSHA256": "8bac154a5deb77f0746c53acfea8ca43116c73e4fc257cd8d40582d2e064219e",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipHelperStream.cs",
+      "OriginalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipHelperStream.cs",
+      "AfterSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipInputStream.cs",
+      "OriginalSHA256": "73d45180dc2c23b717303d1bed16b2300b9cb9f89fe6cf61f27f9a62972a88d7",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipInputStream.cs",
+      "AfterSHA256": "73d45180dc2c23b717303d1bed16b2300b9cb9f89fe6cf61f27f9a62972a88d7",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipNameTransform.cs",
+      "OriginalSHA256": "4c83f9a9d878efc1540d96c18c1de3f5219ae6abcf836f834c24442927c89d9a",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipNameTransform.cs",
+      "AfterSHA256": "4c83f9a9d878efc1540d96c18c1de3f5219ae6abcf836f834c24442927c89d9a",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipOutputStream.cs",
+      "OriginalSHA256": "51bca38d4f9b905158cff65470c67d9f3b352f377a696eec8f76f471a685f898",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipOutputStream.cs",
+      "AfterSHA256": "51bca38d4f9b905158cff65470c67d9f3b352f377a696eec8f76f471a685f898",
+      "BytesUnchanged": true
+    },
+    {
+      "OriginalPath": "Zip/ZipStrings.cs",
+      "OriginalSHA256": "344b5648d0e5a2f1b75f1468f04216ac0fb03628ff2631e043dd7ee9f1abb488",
+      "AfterPath": "Shared/src/Celeste.Compression.Archives/Zip/ZipStrings.cs",
+      "AfterSHA256": "344b5648d0e5a2f1b75f1468f04216ac0fb03628ff2631e043dd7ee9f1abb488",
+      "BytesUnchanged": true
+    }
+  ]
+}

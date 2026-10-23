@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>12.0</LangVersion>
+        <AssemblyName>Celeste.Formats.Content</AssemblyName>
+        <RootNamespace>Celeste.Formats.Content</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Core/Celeste.Core.csproj" />
+        <PackageReference Include="System.Text.Json" Version="8.0.5" />
+        <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
+    </ItemGroup>
+</Project>

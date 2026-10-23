@@ -1,0 +1,40 @@
+using System.Collections.Generic;
+using System.Numerics;
+
+namespace Celeste.Input.Gameplay
+{
+    public enum GameAction
+    {
+        Left,
+        Right,
+        Up,
+        Down,
+        LeftMoveOnly,
+        RightMoveOnly,
+        UpMoveOnly,
+        DownMoveOnly,
+        LeftDashOnly,
+        RightDashOnly,
+        UpDashOnly,
+        DownDashOnly,
+        MountainLeft,
+        MountainRight,
+        MountainUp,
+        MountainDown,
+        Jump,
+        Dash,
+        CrouchDash,
+        Grab,
+        Talk,
+        Escape,
+        Pause,
+        QuickRestart,
+        MenuLeft,
+        MenuRight,
+        MenuUp,
+        MenuDown,
+        MenuConfirm,
+        MenuCancel,
+        MenuJournal
+    }
+}

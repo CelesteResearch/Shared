@@ -1,0 +1,6 @@
+The FNA-derived effect implementations under src/Celeste.Graphics/Rendering/Effects retain their upstream Microsoft Public License terms.
+
+Effect infrastructure: Copyright 2009-2024 Ethan Lee and the MonoGame Team; see FNA.MS-PL.txt.
+Stock effects including BasicEffect: Copyright (C) Microsoft Corporation. All rights reserved; see FNA-StockEffects.MS-PL.txt.
+
+These sources have been adapted to the project graphics interfaces and type names. Framework effect bytecode is a separate restored build input.

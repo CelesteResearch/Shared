@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>14.0</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <AssemblyName>Celeste.Graphics.Direct3D11</AssemblyName>
+        <RootNamespace>Celeste.Graphics.Direct3D11</RootNamespace>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Celeste.Graphics/Celeste.Graphics.csproj" />
+    </ItemGroup>
+</Project>
